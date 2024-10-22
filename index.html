@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/img/png/fav-icon.webp">
+    <link rel="icon" href="./assets/img/webp/fav-icon-img.png">
 
     <title>Workup</title>
     <meta name="title" content="Superpower your business finance " />
@@ -47,6 +47,7 @@
                 },
                 extend: {
                     fontSize: {
+                        '4xl-2': '40px',
                         '6xl': "54px",
                         '7xl': "65px",
                     },
@@ -56,24 +57,26 @@
                     colors: {
                         "blue": "#2ABAE9",
                         "light-black": "#3B444B",
-                        "light-blue": "#7D889E",
-                        "light-brown": "#464647",
-                        "light-gray": "#FAF9F6",
-                        "lavender": "#E1E1FF",
-                        "grayish-yellow": "#EEEEEC",
+                        "blue-white": "#208BD5",
+                        "brown": "#4D4D4D"
+
                     },
                     boxShadow: {
-                        "default": '0px 4px 30px 0px #00000026',
-                        "secondary": "0px 0px 3.3px 0px #1B335333",
-                        "dark": "0px 0px 49px 7px #00000017",
+                        "default": '0px 0px 20px 10px #ABCDFE',
+                        "secondary": "white 0px 0px 20px 5px ",
+                        "dark": "0px 1px 30px 0px #0000001A",
                         "light": "0px 10px 20px 0px #00000026",
                         "light-2": "5px 0px 15px 0px #00000026",
                         "light-3": "0px 10px 15px 0px #00000026",
                     },
                     backgroundImage: {
                         'hero-bg': "url('assets/img/svg/hero-sec-bg.svg')",
-                        "br": "border:border-image-source: linear-gradient(90.79deg, #994FFF 0.27%, #4AB6FE 98.57%)"
+                        'blue-bg': "url('assets/img/webp/our-section-bg.png')",
+                        "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)"
                     },
+                    background: {
+                        "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)"
+                    }
                 }
             }
         }
@@ -81,33 +84,54 @@
 </head>
 
 <body>
+    <!-- =================================== hero section ========================================= -->
     <section class="bg-hero-bg w-full max-h-[800px] min-h-[800px]">
-        <div class="container">
-            <nav class="flex justify-between items-center py-[23px]">
-                <img src="./assets/img/svg/header-logo.svg" alt="header-logo">
+        <div class="container px-3 mx-auto">
+            <nav class="flex justify-between items-center lg:py-[23px] py-4">
+                <a href="/"><img class="lg:max-w-[160px] max-w-[120px]" src="./assets/img/svg/header-logo.svg"
+                        alt="header-logo"></a>
                 <div
-                    class="flex gap-8 items-center font-inter lg:text-base text-sm font-normal leading-[118%] text-light-black">
-                    <a href="#chat">Chat Room</a>
-                    <a href="#invest">Invest</a>
-                    <a href="#co-founder">Become a Co-Founder</a>
-                    <button
-                        class="px-6 py-3 text-blue bg-white border-none hover:bg-blue hover:text-white rounded-full font-semibold leading-[118%]">Log
-                        In</button>
+                    class="gap-[25px] flex flex-col menulist justify-center items-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 bg-blue z-[100] lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
+                    <div
+                        class="flex lg:flex-row flex-col gap-8 items-center font-inter lg:text-base text-sm font-normal leading-[118%] text-light-black">
+                        <a class="lg:hover:text-blue-white hover:text-white duration-300 ease-linear" href="#chat">Chat
+                            Room</a>
+                        <a class="lg:hover:text-blue-white hover:text-white duration-300 ease-linear"
+                            href="#invest">Invest</a>
+                        <a class="lg:hover:text-blue-white hover:text-white duration-300 ease-linear"
+                            href="#co-founder">Become a
+                            Co-Founder</a>
+                        <button
+                            class="px-6 py-3 text-blue duration-300 ease-linear lg:hover:shadow-default hover:shadow-secondary bg-white border-none hover:bg-blue hover:text-white rounded-full font-semibold leading-[118%]">Log
+                            In</button>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:hidden menubar justify-between z-[200] scroll-m-0 w-8 h-6 ">
+                    <span
+                        class="w-full h-1 flex rounded-md transition-all duration-500 bg-white menubarFirst origin-left"></span>
+                    <span
+                        class="w-full h-1 flex rounded-md transition-all duration-500 bg-white menubarSecond origin-left"></span>
+                    <span
+                        class="w-full h-1 flex rounded-md transition-all duration-500 bg-white menubarThird origin-left"></span>
                 </div>
             </nav>
             <div class="container pt-8 flex flex-col justify-center items-center">
-                <div class="bg-white rounded-3xl lg:mb-2 mb-1">
-                    <p class="px-3 py-1 linear-blue">Empowering Autopilot Automation</p>
+                <div class="bg-white rounded-3xl lg:mb-2 mb-3">
+                    <p class="px-3 py-1 linear-blue lg:text-base text-sm">Empowering Autopilot Automation</p>
                 </div>
-                <h1 class="font-semibold text-6xl leading-[118%] lg:mb-2 mb-1">Superpower your business finance </h1>
-                <p class="font-normal text-2xl leading-[118%] lg:mb-8 mb-6">Be empowered to completely run your finances
+                <h1
+                    class="font-semibold xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-center leading-[118%]  mb-2">
+                    Superpower your business finance </h1>
+                <p
+                    class="font-normal xl:text-2xl lg:text-xl md:text-lg text-base leading-[118%] lg:mb-8 mb-6 text-center max-sm:max-w-64">
+                    Be empowered to completely run your finances
                     on autopilot</p>
                 <div
-                    class="relative py-2 px-2 bg-white rounded-[35px] mb-[22px] flex max-w-[464px] justify-between w-full border-blue border-[1px]">
+                    class="relative lg:py-2 py-1 lg:px-2 px-1 bg-white rounded-[35px] mb-[22px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full border-blue border-[1px]">
                     <input type="email" required
                         class="font-normal ps-[14px] outline-none max-w-[350px] w-full lg:text-base text-sm leading-[118%] bg-transparent"
                         placeholder="Enter email to join waitlist">
-                    <img class="max-w-[69px] cursor-pointer" src="./assets/img/webp/email-right-img.png"
+                    <img class="lg:max-w-[69px] max-w-[47px] cursor-pointer" src="./assets/img/webp/email-right-img.png"
                         alt="right-arrow">
                     <img class="absolute -top-8 w-full lg:min-w-[564px] -left-12 border-br z-[-50]"
                         src="./assets/img/webp/email-bg-shadow.png" alt="shadow-img">
@@ -119,6 +143,205 @@
         </div>
     </section>
 
+    <!-- =================================== our features section ================================= -->
+    <section class="pt-[105px] pb-40">
+        <div class="container mx-auto px-3 relative">
+            <div class="absolute lg:-left-16 left-4 top-[54%] group ">
+                <button
+                    class="prev items-center flex justify-center border border-brown  group-hover:bg-linear-1 duration-300 ease-linear group-hover:border-none size-[45px] rounded-full cursor-pointer"
+                    aria-label="Previous Slide"><svg width="12" height="15" viewBox="0 0 12 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0457 19.5608C11.3269 19.2795 11.4849 18.8981 11.4849 18.5003C11.4849 18.1026 11.3269 17.7211 11.0457 17.4398L3.62073 10.0148L11.0457 2.58982C11.319 2.30692 11.4702 1.92801 11.4667 1.53472C11.4633 1.14142 11.3056 0.765204 11.0275 0.487091C10.7493 0.208979 10.3731 0.0512277 9.97983 0.0478097C9.58654 0.0443917 9.20764 0.195583 8.92473 0.468821L0.439233 8.95432C0.158026 9.23561 5.35296e-05 9.61707 5.35248e-05 10.0148C5.35201e-05 10.4126 0.158026 10.794 0.439233 11.0753L8.92473 19.5608C9.20603 19.842 9.58749 20 9.98523 20C10.383 20 10.7644 19.842 11.0457 19.5608Z"
+                            fill="#4D4D4D" class="group-hover:fill-[#EEEEEC]" />
+                    </svg>
+                </button>
+            </div>
+            <div class="absolute lg:-right-16 right-4 top-[54%] group">
+                <button
+                    class="next items-center flex justify-center border border-brown  group-hover:bg-linear-1 duration-300 ease-linear group-hover:border-none group-hover:bg-blue size-[45px] rounded-full cursor-pointer"
+                    aria-label="Next Slide"><svg width="12" height="15" viewBox="0 0 12 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.704443 19.5608C0.423236 19.2795 0.265263 18.8981 0.265263 18.5003C0.265263 18.1026 0.423236 17.7211 0.704443 17.4398L8.12944 10.0148L0.704442 2.58982C0.431205 2.30692 0.280014 1.92801 0.283431 1.53472C0.286849 1.14142 0.444601 0.765204 0.722714 0.487092C1.00083 0.208979 1.37704 0.0512277 1.77034 0.04781C2.16364 0.0443924 2.54254 0.195584 2.82544 0.468821L11.3109 8.95432C11.5921 9.23561 11.7501 9.61707 11.7501 10.0148C11.7501 10.4126 11.5921 10.794 11.3109 11.0753L2.82544 19.5608C2.54415 19.842 2.16269 20 1.76494 20C1.3672 20 0.985735 19.842 0.704443 19.5608Z"
+                            fill="#3B5998" class="group-hover:fill-[#EEEEEC]" />
+                    </svg>
+                </button>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+
+                <h2
+                    class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-center xl:mb-[70px] font-medium lg:mb-14 md:mb-11 mb-7">
+                    Explore Our Features</h2>
+                <div
+                    class="features-slider overflow-hidden xl:max-w-[1140px] lg:max-w-[992px] md:max-w-[668px] sm:max-W-[576px] max-w-[270px]  max-lg:w-full">
+                    <div>
+                        <div
+                            class="flex justify-center rounded-[10px] hover:border-none hover:shadow-dark duration-300 ease-linear max-w-[267px] xl:min-w-[267px] min-w-[240px] border w-full lg:min-h-[249px] md:min-h-[200px] min-h-[180px] max-md:max-w-[320px] xl:pt-[47px] lg:pt-9 md:pt-8 pt-6">
+                            <div class="slider-box flex flex-col items-center">
+                                <img class="size-10 xl:mb-8 lg:mb-6 md:mb-5 mb-4"
+                                    src="./assets/img/svg/arrow-reload-img.svg" alt="refresh-img">
+                                <p
+                                    class="font-medium xl:text-xl lg:text-lg text-base xl:mb-4 lg:mb-3 mb-2 leading-[118%]">
+                                    Auto Rules</p>
+                                <p class="max-w-[156px] text-center font-inter text-light-black text-base">Create auto
+                                    rules for all business finance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex justify-center rounded-[10px] hover:border-none hover:shadow-dark duration-300 ease-linear max-w-[267px] xl:min-w-[267px] min-w-[240px] border w-full lg:min-h-[249px] md:min-h-[200px] min-h-[180px] max-md:max-w-[320px] xl:pt-[38px] lg:pt-9 md:pt-8 pt-6">
+                            <div class="slider-box flex flex-col items-center">
+                                <img class="size-10 xl:mb-8 lg:mb-6 md:mb-5 mb-4"
+                                    src="./assets/img/svg/system-uicons_chain.svg" alt="system-uicons_chain">
+                                <p
+                                    class="font-medium xl:text-xl lg:text-lg text-base xl:mb-4 lg:mb-3 mb-2 leading-[118%]">
+                                    Linked Accounts</p>
+                                <p class="max-w-[196px] text-center font-inter text-light-black text-base">Ability to
+                                    lock & secure any business account.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex justify-center rounded-[10px] hover:border-none hover:shadow-dark duration-300 ease-linear max-w-[267px] xl:min-w-[267px] min-w-[240px] border w-full lg:min-h-[249px] md:min-h-[200px] min-h-[180px] max-md:max-w-[320px] xl:pt-[47px] lg:pt-9 md:pt-8 pt-6">
+                            <div class="slider-box flex flex-col items-center">
+                                <img class="size-10 xl:mb-8 lg:mb-6 md:mb-5 mb-4"
+                                    src="./assets/img/svg/lock-outline-img.svg" alt="lock-outline-img">
+                                <p
+                                    class="font-medium xl:text-xl lg:text-lg text-base xl:mb-4 lg:mb-3 mb-2 leading-[118%]">
+                                    Locked Accounts</p>
+                                <p class="max-w-[216px] text-center font-inter text-light-black text-base">Link any
+                                    existing business account in seconds.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex justify-center rounded-[10px] hover:border-none hover:shadow-dark duration-300 ease-linear max-w-[267px] xl:min-w-[267px] min-w-[240px] border w-full lg:min-h-[249px] md:min-h-[200px] min-h-[180px] max-md:max-w-[320px] xl:pt-[38px] lg:pt-9 md:pt-8 pt-6">
+                            <div class="slider-box flex flex-col items-center">
+                                <img class="size-10 xl:mb-8 lg:mb-6 md:mb-5 mb-4"
+                                    src="./assets/img/svg/transfer-line-img.svg" alt="transfer-line-img">
+                                <p
+                                    class="font-medium xl:text-xl lg:text-lg text-base xl:mb-4 lg:mb-3 mb-2 leading-[118%]">
+                                    Transaction Accounts</p>
+                                <p class="max-w-[196px] text-center font-inter text-light-black text-base">Unlimited
+                                    payments and transfers within Austraila.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex justify-center rounded-[10px] hover:border-none hover:shadow-dark duration-300 ease-linear max-w-[267px] xl:min-w-[267px] min-w-[240px] border w-full lg:min-h-[249px] md:min-h-[200px] min-h-[180px] max-md:max-w-[320px] xl:pt-[47px] lg:pt-9 md:pt-8 pt-6">
+                            <div class="slider-box flex flex-col items-center">
+                                <img class="size-10 xl:mb-8 lg:mb-6 md:mb-5 mb-4"
+                                    src="./assets/img/svg/arrow-reload-img.svg" alt="refresh-img">
+                                <p
+                                    class="font-medium xl:text-xl lg:text-lg text-base xl:mb-4 lg:mb-3 mb-2 leading-[118%]">
+                                    Auto Rules</p>
+                                <p class="max-w-[156px] text-center font-inter text-light-black text-base">Create auto
+                                    rules for all business finance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex justify-center rounded-[10px] hover:border-none hover:shadow-dark duration-300 ease-linear max-w-[267px] xl:min-w-[267px] min-w-[240px] border w-full lg:min-h-[249px] md:min-h-[200px] min-h-[180px] max-md:max-w-[320px] xl:pt-[38px] lg:pt-9 md:pt-8 pt-6">
+                            <div class="slider-box flex flex-col items-center">
+                                <img class="size-10 xl:mb-8 lg:mb-6 md:mb-5 mb-4"
+                                    src="./assets/img/svg/system-uicons_chain.svg" alt="system-uicons_chain">
+                                <p
+                                    class="font-medium xl:text-xl lg:text-lg text-base xl:mb-4 lg:mb-3 mb-2 leading-[118%]">
+                                    Linked Accounts</p>
+                                <p class="max-w-[196px] text-center font-inter text-light-black text-base">Ability to
+                                    lock & secure any business account.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex justify-center rounded-[10px] hover:border-none hover:shadow-dark duration-300 ease-linear max-w-[267px] xl:min-w-[267px] min-w-[240px] border w-full lg:min-h-[249px] md:min-h-[200px] min-h-[180px] max-md:max-w-[320px] xl:pt-[47px] lg:pt-9 md:pt-8 pt-6">
+                            <div class="slider-box flex flex-col items-center">
+                                <img class="size-10 xl:mb-8 lg:mb-6 md:mb-5 mb-4"
+                                    src="./assets/img/svg/lock-outline-img.svg" alt="lock-outline-img">
+                                <p
+                                    class="font-medium xl:text-xl lg:text-lg text-base xl:mb-4 lg:mb-3 mb-2 leading-[118%]">
+                                    Locked Accounts</p>
+                                <p class="max-w-[216px] text-center font-inter text-light-black text-base">Link any
+                                    existing business account in seconds.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="flex justify-center rounded-[10px] hover:border-none hover:shadow-dark duration-300 ease-linear max-w-[267px] xl:min-w-[267px] min-w-[240px] border w-full lg:min-h-[249px] md:min-h-[200px] min-h-[180px] max-md:max-w-[320px] xl:pt-[38px] lg:pt-9 md:pt-8 pt-6">
+                            <div class="slider-box flex flex-col items-center">
+                                <img class="size-10 xl:mb-8 lg:mb-6 md:mb-5 mb-4"
+                                    src="./assets/img/svg/transfer-line-img.svg" alt="transfer-line-img">
+                                <p
+                                    class="font-medium xl:text-xl lg:text-lg text-base xl:mb-4 lg:mb-3 mb-2 leading-[118%]">
+                                    Transaction Accounts</p>
+                                <p class="max-w-[196px] text-center font-inter text-light-black text-base">Unlimited
+                                    payments and transfers within Austraila.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== our mission section ================================= -->
+    <section class="mb-20">
+        <div class="container mx-auto px-3 w-full">
+            <div class="bg-blue-bg xl:h-[784px] lg:h-[700px] h-full w-[103%] max-w-[1140px] rounded-xl overflow-hidden">
+                <div>
+                    <div class="flex flex-wrap w-full justify-center">
+                        <div class="lg:w-6/12 lg:pt-10 md:pt-6 pt-3 md:pl-10 px-3">
+                            <h3
+                                class="lg:mb-6 md:mb-4 mb-2 xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium text-white text-center lg:text-start">
+                                Our Mission</h3>
+                            <p
+                                class="lg:text-base text-sm max-w-[420px] text-white font-inter text-center lg:text-start">
+                                Our mission is to harness
+                                the power of AI-driven automation to empower Australian businesses. We
+                                propel all sized businesses towards success by automating financial tasks, from tax
+                                payments
+                                to
+                                bank transfers, report building. Creating an ecosystem where AI acts as the autopilot
+                                for
+                                finance. Join us in building a future where businesses thrive effortlessly and reach new
+                                heights.</p>
+                        </div>
+                        <div class="lg:w-6/12 flex">
+                            <img class="xl:max-w-[573px] lg:max-w-[500px] md:max-w-[300px] w-full lg:pt-0 pt-5 lg:px-0 px-3"
+                                src="./assets/img/webp/mobile-laptop-img-2.png" alt="mobile-and-laptop-img">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap w-full pt-5 justify-center">
+                        <div class="lg:w-6/12">
+                            <img class="xl:max-w-[550px] lg:max-w-[500px] md:max-w-[307px] w-full lg:pt-0 pt-0 lg:px-0 px-3"
+                                src="./assets/img/webp/mobile-laptop-img-1.png" alt="mobile-and-laptop-img">
+                        </div>
+                        <div class="lg:w-6/12 lg:pt-10 md:pt-6 pt-3 md:pl-10 px-3">
+                            <h3
+                                class="lg:mb-6 md:mb-4 mb-2 xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium text-white text-center lg:text-start">
+                                Solution</h3>
+                            <p
+                                class="lg:text-base text-sm max-w-[420px] text-white font-inter text-center lg:text-start pb-3">
+                                We grasp the struggles of
+                                business finance management and the risks of losing control. WorkUp's AI automation
+                                solution
+                                restores control, automating tax payments, securing profits, and managing expenses with
+                                ease
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--L QUERRY MIN JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

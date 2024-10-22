@@ -9,3 +9,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.overflow-lg-hidden {
+    overflow: hidden;
+}
+
+/* ====================================================== */
+.slick-list {}
+
+.slick-track {
+    display: flex !important;
+    gap: 24px !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
