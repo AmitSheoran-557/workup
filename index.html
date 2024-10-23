@@ -56,23 +56,34 @@
                     },
                     colors: {
                         "blue": "#2ABAE9",
+                        "pink": "#E939D9",
+                        "light-blue": "#F7FCFE",
+                        "periwinkle-blue": "#86AFF0",
                         "light-black": "#3B444B",
+                        "light-white": "#DBEDFA",
                         "blue-white": "#208BD5",
-                        "brown": "#4D4D4D"
-
+                        "brown": "#4D4D4D",
+                        "light-gray": "#ECECEC"
                     },
                     boxShadow: {
                         "default": '0px 0px 20px 10px #ABCDFE',
                         "secondary": "white 0px 0px 20px 5px ",
                         "dark": "0px 1px 30px 0px #0000001A",
+                        "blue": "2px 4px 23px 0px #078DFC40",
                         "light": "0px 10px 20px 0px #00000026",
                         "light-2": "5px 0px 15px 0px #00000026",
                         "light-3": "0px 10px 15px 0px #00000026",
+                        "light-4": "0px 6px 13px 0px #0000001A",
+                        "light-5": "0px 9px 34px 0px #0000001A",
+                        "light-6": "-5px -3px 28px 0px #2929291a"
                     },
                     backgroundImage: {
                         'hero-bg': "url('assets/img/svg/hero-sec-bg.svg')",
                         'blue-bg': "url('assets/img/webp/our-section-bg.png')",
-                        "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)"
+                        "blue-pink": "linear-gradient(226.79deg, #E939D9 -11.53%, #2ABAE9 92.1%)",
+                        "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)",
+                        "linear-2": "linear-gradient(104.91deg, #2ABAE9 0%, #1B77CC 100%)",
+                        "linear-3": "linear-gradient(270.02deg, rgba(255, 255, 255, 0) 0.03%, #FFFFFF 42.75%, #FFFFFF 59.94%, rgba(255, 255, 255, 0) 100.06%)"
                     },
                     background: {
                         "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)"
@@ -295,7 +306,8 @@
     <!-- =================================== our mission section ================================= -->
     <section class="mb-20">
         <div class="container mx-auto px-3 w-full">
-            <div class="bg-blue-bg xl:h-[784px] lg:h-[700px] h-full w-[103%] max-w-[1140px] rounded-xl overflow-hidden">
+            <div
+                class="bg-blue-pink xl:h-[784px] lg:h-[700px] h-full w-[103%] object-cover max-w-[1140px] rounded-xl overflow-hidden">
                 <div>
                     <div class="flex flex-wrap w-full justify-center">
                         <div class="lg:w-6/12 lg:pt-10 md:pt-6 pt-3 md:pl-10 px-3">
@@ -315,13 +327,13 @@
                                 heights.</p>
                         </div>
                         <div class="lg:w-6/12 flex">
-                            <img class="xl:max-w-[573px] lg:max-w-[500px] md:max-w-[300px] w-full lg:pt-0 pt-5 lg:px-0 px-3"
+                            <img class="xl:max-w-[573px] lg:max-w-[500px] max-w-[300px] lg:pt-0 pt-5 lg:px-0 px-3"
                                 src="./assets/img/webp/mobile-laptop-img-2.png" alt="mobile-and-laptop-img">
                         </div>
                     </div>
                     <div class="flex flex-wrap w-full pt-5 justify-center">
                         <div class="lg:w-6/12">
-                            <img class="xl:max-w-[550px] lg:max-w-[500px] md:max-w-[307px] w-full lg:pt-0 pt-0 lg:px-0 px-3"
+                            <img class="xl:max-w-[550px] lg:max-w-[500px] max-w-[307px] lg:pt-0 pt-0 lg:px-0 px-3"
                                 src="./assets/img/webp/mobile-laptop-img-1.png" alt="mobile-and-laptop-img">
                         </div>
                         <div class="lg:w-6/12 lg:pt-10 md:pt-6 pt-3 md:pl-10 px-3">
@@ -342,6 +354,220 @@
             </div>
         </div>
     </section>
+
+    <!-- =================================== wait-list section ================================= -->
+    <section class="pb-40">
+        <div class="container mx-auto px-3">
+            <div
+                class="blue-box bg-linear-2 xl:pt-[29px] lg:pt-6 md:pt-5 pt-4 flex flex-col justify-center items-center rounded-2xl max-w-[761px] lg:min-h-[198px] md:min-h-[170px] min-h-[150px] mx-auto">
+                <h2
+                    class="md:mb-4 mb-3 font-medium lg:mb-[76px] xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-white text-center">
+                    Join our waitlist</h2>
+                <div
+                    class="relative lg:py-2 py-1 lg:px-2 px-1 bg-white rounded-[35px] mb-[22px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full border-blue border-[1px]">
+                    <input type="email" required
+                        class="font-normal ps-[14px] outline-none max-w-[350px] w-full lg:text-base text-sm leading-[118%] bg-transparent"
+                        placeholder="Enter email to join waitlist">
+                    <img class="lg:max-w-[69px] max-w-[47px] cursor-pointer" src="./assets/img/webp/email-right-img.png"
+                        alt="right-arrow">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== problem section ================================= -->
+    <section class="mb-20">
+        <div class="container px-3 lg:max-w-[800px] xl:max-w-[1170px]">
+            <h2 class="lg:mb-[76px] xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-center font-medium">Problem We
+                are solving</h2>
+            <div class="flex flex-wrap justify-center items-center mx-auto">
+                <div class="xl:w-4/12 lg:w-6/12 py-3 px-3 ">
+                    <div
+                        class="lg:px-[29px] px-5 lg:py-[37px] py-7 border rounded-xl border-light-gray max-w-[364px] hover:border-none hover:shadow-light-4 lg:min-w-[364px] lg:min-h-[245px] w-full">
+                        <img class="xl:mb-[26px] lg:mb-5 mb-3" src="./assets/img/svg/spend-control.svg" alt="hand-img">
+                        <h4 class="font-medium lg:text-xl text-lg leading-[118%] lg:mb-[13px] mb-2">Spend Control</h4>
+                        <p class="max-w-[280px] lg:text-base text-sm text-light-black font-inter">Smart card issuing and
+                            budget control, so its easy to
+                            do the right
+                            thing.</p>
+                    </div>
+                </div>
+                <div class="xl:w-4/12 lg:w-6/12 py-3 px-3">
+                    <div
+                        class="lg:px-[29px] px-5 lg:py-[37px] py-7 border rounded-xl border-light-gray max-w-[364px] hover:border-none hover:shadow-light-4 lg:min-w-[364px] lg:min-h-[245px]">
+                        <img class="xl:mb-[26px] lg:mb-5 mb-3" src="./assets/img/svg/setting-img.svg" alt="setting-img">
+                        <h4 class="font-medium lg:text-xl text-lg leading-[118%] lg:mb-[13px] mb-2">Unforgotten Taxes
+                        </h4>
+                        <p class="max-w-[294px] lg:text-base text-sm text-light-black font-inter">Fully integrated tax
+                            solution, so you’re always aware of what’s really yours.</p>
+                    </div>
+                </div>
+                <div class="xl:w-4/12 lg:w-6/12 py-3 px-3">
+                    <div
+                        class="lg:px-[29px] px-5 lg:py-[37px] py-7 border rounded-xl border-light-gray max-w-[364px] hover:border-none hover:shadow-light-4 lg:min-w-[364px] lg:min-h-[245px]">
+                        <img class="xl:mb-[26px] lg:mb-5 mb-3" src="./assets/img/svg/tax-img.svg" alt="tax-img">
+                        <h4 class="font-medium lg:text-xl text-lg leading-[118%] lg:mb-[13px] mb-2">Spend Control</h4>
+                        <p class="max-w-[288px] lg:text-base text-sm text-light-black font-inter">Over are the days of
+                            manually inputting or retrieving financial data. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== experience section ================================= -->
+    <section class="pb-40">
+        <div class="container mx-auto px-3">
+            <div
+                class="flex justify-center flex-col shadow-light-5 rounded-xl bg-blue-pink w-full lg:min-h-[233px] xl:px-[119px] lg:px-20 md:px-16 sm:px-12 px-7 xl:py-[52px] lg:py-10 md:py-7 py-5">
+                <div class="flex flex-wrap justify-center items-center">
+                    <div class="lg:w-3/12 md:w-6/12 w-full relative max-lg:justify-center flex">
+                        <img class="absolute lg:right-3 right-0 lg:-translate-y-7 translate-y-2 w-[1.7px] max-h-[128px] max-md:hidden"
+                            src="./assets/img/webp/border-line.png" alt="border">
+                        <div class="flex flex-col items-center max-w-[160px]">
+                            <p
+                                class="font-inter font-semibold lg:mb-2 mb-1 tracking-wider xl:text-5xl lg:text-4xl text-3xl text-white">
+                                +12</p>
+                            <p
+                                class="text-light-white text-center font-inter font-normal lg:text-base text-sm text-white">
+                                Years Of
+                                Experience</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/12 md:w-6/12 w-full md:mt-0 mt-7 relative justify-center flex">
+                        <img class="absolute right-0 lg:-translate-y-7 w-[1px] max-h-[128px] max-lg:hidden"
+                            src="./assets/img/webp/border-line.png" alt="border">
+                        <div class="flex flex-col items-center max-w-[160px]">
+                            <p
+                                class="font-inter leading-[118%] font-semibold lg:mb-2 mb-1 tracking-wider xl:text-5xl lg:text-4xl text-3xl text-white">
+                                +524</p>
+                            <p
+                                class="text-light-white text-center font-inter font-normal lg:text-base text-sm text-white">
+                                Success
+                                members</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/12 md:w-6/12 w-full lg:mt-0 mt-7 relative flex justify-center">
+                        <img class="absolute -right-3 lg:-translate-y-7 w-[1.7px] max-h-[128px] max-lg:hidden"
+                            src="./assets/img/webp/border-line.png" alt="border">
+                        <div class="flex flex-col items-center max-w-[110px]">
+                            <p
+                                class="font-inter font-semibold lg:mb-2 mb-1 tracking-wider xl:text-5xl lg:text-4xl text-3xl text-white">
+                                +35</p>
+                            <p
+                                class="text-light-white text-center font-inter font-normal lg:text-base text-sm text-white">
+                                Active
+                                Teams</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/12 md:w-6/12 w-full lg:mt-0 mt-7 flex lg:justify-end justify-center">
+                        <div class="flex flex-col items-center max-w-[140px]">
+                            <p
+                                class="font-inter font-semibold lg:mb-2 mb-1 tracking-wider xl:text-5xl lg:text-4xl text-3xl text-white">
+                                +420</p>
+                            <p
+                                class="text-light-white text-center font-inter font-normal lg:text-base text-sm text-white">
+                                Happy
+                                Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== dashboard section ================================= -->
+    <section class="py-10">
+        <div class="container px-3">
+            <div
+                class="box max-w-[1060px] hover:shadow-blue border-light-gray border-[1px] hover:border-none duration-300 ease-linear pe-7 rounded-xl relative mb-[49px]">
+                <div class=" border-l-[17px] rounded-xl ps-7 border-blue">
+                    <img class="absolute -right-[13px] top-[62px] max-w-[50px]" src="./assets/img/webp/dot-img.png"
+                        alt="dot-img">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-6/12 w-full flex flex-col justify-center max-lg:items-center max-lg:text-center">
+                            <h4 class="font-semibold lg:text-2xl md:text-xl text-lg lg:mb-[12px] mb-2 max-lg:pt-5">Updated with your
+                                Dashboard</h4>
+                            <p class="max-w-[443px] text-inter text-brown lg:text-base text-sm">Lorem ipsum dolor sit
+                                amet consectetur. Non eget amet et vel amet at quisque tincidunt
+                                ornare. Erat at sed aenean vestibulum pellentesque vulputate. </p>
+                        </div>
+                        <div class="lg:w-6/12 w-full flex lg:justify-end justify-center">
+                            <img class="lg:max-w-[327px] max-w-[280px] lg:pr-[34px]" src="./assets/img/webp/graph-img.png" alt="graph-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="box max-w-[1060px] hover:shadow-blue border-light-gray border-[1px] hover:border-none duration-300 ease-linear rounded-xl relative mb-[49px]">
+                <div class=" border-r-[12px] rounded-xl border-pink">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-6/12 w-full flex max-lg:justify-center">
+                            <img class="lg:max-w-[409px] md:max-w-[340px] sm:max-w-[290px] max-w-[250px] w-full lg:ml-[46px]  mt-[24px] mb-[14px] shadow-light-6 rounded-2xl"
+                                src="./assets/img/webp/accounts-card-img.png" alt="accounts-card-img">
+                        </div>
+                        <div class="lg:w-6/12 w-full flex flex-col justify-center items-center">
+                            <div class="max-lg:text-center">
+                                <h4 class="font-semibold lg:text-2xl md:text-xl text-lg lg:mb-[10px] mb-2">Accounts</h4>
+                                <p class="max-w-[443px] text-inter text-brown lg:text-base text-sm">Lorem ipsum dolor
+                                    sit
+                                    amet consectetur. Non eget amet et vel amet at quisque tincidunt
+                                    ornare. Erat at sed aenean vestibulum pellentesque vulputate. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="box max-w-[1060px] hover:shadow-blue border-light-gray border-[1px] hover:border-none duration-300 ease-linear pe-7 rounded-xl relative mb-[49px]">
+                <div class=" border-l-[17px] rounded-xl ps-7 border-periwinkle-blue">
+                    <img class="absolute -right-1 -bottom-[57.5px] max-w-[50px]" src="./assets/img/webp/dot-img.png"
+                        alt="dot-img">
+                    <div class="flex flex-wrap">
+                        <div class="lg:w-6/12 w-full flex flex-col justify-center max-lg:items-center max-lg:text-center">
+                            <h4 class="font-semibold lg:text-2xl md:text-xl text-lg lg:mb-[12px] mb-2  max-lg:pt-5">Cards</h4>
+                            <p class="max-w-[423px] text-inter text-brown lg:text-base text-sm">Lorem ipsum dolor sit
+                                amet consectetur. Non eget amet et vel amet at quisque tincidunt
+                                ornare. Erat at sed aenean vestibulum pellentesque vulputate. </p>
+                        </div>
+                        <div class="lg:w-6/12 w-full flex lg:justify-end justify-center">
+                            <img class="lg:max-w-[327px] max-w-[300px] lg:pr-[34px] w-full" src="./assets/img/webp/graph-img.png" alt="graph-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== wait-list section 2 ================================= -->
+    <section class="pb-40">
+        <div class="container mx-auto px-3">
+            <div
+                class="blue-box bg-linear-2 xl:pt-[29px] lg:pt-6 md:pt-5 pt-4 flex flex-col justify-center items-center rounded-2xl max-w-[761px] lg:min-h-[198px] md:min-h-[170px] min-h-[150px] mx-auto">
+                <h2
+                    class="md:mb-4 mb-3 font-medium lg:mb-[76px] xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-white text-center">
+                    Join our waitlist</h2>
+                <div
+                    class="relative lg:py-2 py-1 lg:px-2 px-1 bg-white rounded-[35px] mb-[22px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full border-blue border-[1px]">
+                    <input type="email" required
+                        class="font-normal ps-[14px] outline-none max-w-[350px] w-full lg:text-base text-sm leading-[118%] bg-transparent"
+                        placeholder="Enter email to join waitlist">
+                    <img class="lg:max-w-[69px] max-w-[47px] cursor-pointer" src="./assets/img/webp/email-right-img.png"
+                        alt="right-arrow">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== how it's working section ================================= -->
+    <section class="light-blue">
+        <div class="container mx-auto">
+
+        </div>
+    </section>
+
     <!--L QUERRY MIN JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

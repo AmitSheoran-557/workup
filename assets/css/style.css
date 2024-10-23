@@ -14,8 +14,7 @@
     overflow: hidden;
 }
 
-/* ====================================================== */
-.slick-list {}
+/* ========================= slider css ============================= */    
 
 .slick-track {
     display: flex !important;
@@ -23,3 +22,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.tg{
+    letter-spacing: 1px;
+}
+ 
