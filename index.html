@@ -23,6 +23,8 @@
     <meta property="twitter:image" content="/meta-tag-img.png" />
     <link rel="stylesheet"
         href="@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');">
+    <link rel="stylesheet"
+        href="@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');">
 
     <!-- SLICK MIN JS LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -53,6 +55,7 @@
                     },
                     fontFamily: {
                         "inter": ["Inter", "sans-serif"],
+                        "open-sans": ["Open Sans", "sans-serif"],
                     },
                     colors: {
                         "blue": "#2ABAE9",
@@ -63,7 +66,8 @@
                         "light-white": "#DBEDFA",
                         "blue-white": "#208BD5",
                         "brown": "#4D4D4D",
-                        "light-gray": "#ECECEC"
+                        "Gray": "#808080",
+                        "light-gray": "#ECECEC",
                     },
                     boxShadow: {
                         "default": '0px 0px 20px 10px #ABCDFE',
@@ -75,7 +79,8 @@
                         "light-3": "0px 10px 15px 0px #00000026",
                         "light-4": "0px 6px 13px 0px #0000001A",
                         "light-5": "0px 9px 34px 0px #0000001A",
-                        "light-6": "-5px -3px 28px 0px #2929291a"
+                        "light-6": "-5px -3px 28px 0px #2929291a",
+                        "light-7": "0px 10px 22px 0px #0000000D",
                     },
                     backgroundImage: {
                         'hero-bg': "url('assets/img/svg/hero-sec-bg.svg')",
@@ -83,10 +88,12 @@
                         "blue-pink": "linear-gradient(226.79deg, #E939D9 -11.53%, #2ABAE9 92.1%)",
                         "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)",
                         "linear-2": "linear-gradient(104.91deg, #2ABAE9 0%, #1B77CC 100%)",
-                        "linear-3": "linear-gradient(270.02deg, rgba(255, 255, 255, 0) 0.03%, #FFFFFF 42.75%, #FFFFFF 59.94%, rgba(255, 255, 255, 0) 100.06%)"
+                        "linear-3": "linear-gradient(270.02deg, rgba(255, 255, 255, 0) 0.03%, #FFFFFF 42.75%, #FFFFFF 59.94%, rgba(255, 255, 255, 0) 100.06%)",
+                        "linear-4": "linear-gradient(90.79deg, #994FFF 0.27%, #4AB6FE 98.57%)",
+                        "linear-5": " linear-gradient(224.77deg, #E939D9 2.18 %, #2ABAE9 111.89 %)",
                     },
                     background: {
-                        "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)"
+                        "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)",
                     }
                 }
             }
@@ -361,7 +368,7 @@
             <div
                 class="blue-box bg-linear-2 xl:pt-[29px] lg:pt-6 md:pt-5 pt-4 flex flex-col justify-center items-center rounded-2xl max-w-[761px] lg:min-h-[198px] md:min-h-[170px] min-h-[150px] mx-auto">
                 <h2
-                    class="md:mb-4 mb-3 font-medium lg:mb-[76px] xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-white text-center">
+                    class=" lg:mb-[19px] md:mb-4 mb-3 font-medium xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-white text-center">
                     Join our waitlist</h2>
                 <div
                     class="relative lg:py-2 py-1 lg:px-2 px-1 bg-white rounded-[35px] mb-[22px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full border-blue border-[1px]">
@@ -486,15 +493,18 @@
                     <img class="absolute -right-[13px] top-[62px] max-w-[50px]" src="./assets/img/webp/dot-img.png"
                         alt="dot-img">
                     <div class="flex flex-wrap">
-                        <div class="lg:w-6/12 w-full flex flex-col justify-center max-lg:items-center max-lg:text-center">
-                            <h4 class="font-semibold lg:text-2xl md:text-xl text-lg lg:mb-[12px] mb-2 max-lg:pt-5">Updated with your
+                        <div
+                            class="lg:w-6/12 w-full flex flex-col justify-center max-lg:items-center max-lg:text-center">
+                            <h4 class="font-semibold lg:text-2xl md:text-xl text-lg lg:mb-[12px] mb-2 max-lg:pt-5">
+                                Updated with your
                                 Dashboard</h4>
                             <p class="max-w-[443px] text-inter text-brown lg:text-base text-sm">Lorem ipsum dolor sit
                                 amet consectetur. Non eget amet et vel amet at quisque tincidunt
                                 ornare. Erat at sed aenean vestibulum pellentesque vulputate. </p>
                         </div>
                         <div class="lg:w-6/12 w-full flex lg:justify-end justify-center">
-                            <img class="lg:max-w-[327px] max-w-[280px] lg:pr-[34px]" src="./assets/img/webp/graph-img.png" alt="graph-img">
+                            <img class="lg:max-w-[327px] max-w-[280px] lg:pr-[34px]"
+                                src="./assets/img/webp/graph-img.png" alt="graph-img">
                         </div>
                     </div>
                 </div>
@@ -525,14 +535,17 @@
                     <img class="absolute -right-1 -bottom-[57.5px] max-w-[50px]" src="./assets/img/webp/dot-img.png"
                         alt="dot-img">
                     <div class="flex flex-wrap">
-                        <div class="lg:w-6/12 w-full flex flex-col justify-center max-lg:items-center max-lg:text-center">
-                            <h4 class="font-semibold lg:text-2xl md:text-xl text-lg lg:mb-[12px] mb-2  max-lg:pt-5">Cards</h4>
+                        <div
+                            class="lg:w-6/12 w-full flex flex-col justify-center max-lg:items-center max-lg:text-center">
+                            <h4 class="font-semibold lg:text-2xl md:text-xl text-lg lg:mb-[12px] mb-2  max-lg:pt-5">
+                                Cards</h4>
                             <p class="max-w-[423px] text-inter text-brown lg:text-base text-sm">Lorem ipsum dolor sit
                                 amet consectetur. Non eget amet et vel amet at quisque tincidunt
                                 ornare. Erat at sed aenean vestibulum pellentesque vulputate. </p>
                         </div>
                         <div class="lg:w-6/12 w-full flex lg:justify-end justify-center">
-                            <img class="lg:max-w-[327px] max-w-[300px] lg:pr-[34px] w-full" src="./assets/img/webp/graph-img.png" alt="graph-img">
+                            <img class="lg:max-w-[327px] max-w-[300px] lg:pr-[34px] w-full"
+                                src="./assets/img/webp/graph-img.png" alt="graph-img">
                         </div>
                     </div>
                 </div>
@@ -546,7 +559,7 @@
             <div
                 class="blue-box bg-linear-2 xl:pt-[29px] lg:pt-6 md:pt-5 pt-4 flex flex-col justify-center items-center rounded-2xl max-w-[761px] lg:min-h-[198px] md:min-h-[170px] min-h-[150px] mx-auto">
                 <h2
-                    class="md:mb-4 mb-3 font-medium lg:mb-[76px] xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-white text-center">
+                    class="lg:mb-[19px] md:mb-4 mb-3 font-medium xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-white text-center">
                     Join our waitlist</h2>
                 <div
                     class="relative lg:py-2 py-1 lg:px-2 px-1 bg-white rounded-[35px] mb-[22px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full border-blue border-[1px]">
@@ -562,9 +575,213 @@
     </section>
 
     <!-- =================================== how it's working section ================================= -->
-    <section class="light-blue">
-        <div class="container mx-auto">
+    <section class="bg-light-blue py-[53px]">
+        <div class="container mx-auto px-3">
+            <h2 class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium text-center">How it’s working</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="lg:w-6/12 px-3 lg:mt-0 mt-10">
+                    <img src="./assets/img/webp/working-sec-img.png" alt="component-img">
+                </div>
+                <div class="lg:w-6/12 px-3 flex flex-col justify-center items-end lg:mt-0 mt-10">
+                    <div class="relative">
+                        <img class="absolute pointer-events-none -left-[50px] top-[59px] max-h-[269px]"
+                            src="./assets/img/svg/transfer-line-2.svg" alt="">
+                        <div class="mb-4">
+                            <div
+                                class="max-w-[500px] lg:min-h-[118px] hover:shadow-light-7 border-b-[2px] hover:border-transparent duration-300 ease-linear border-light-gray bg-white xl:px-[22px] lg:px-4 px-3 xl:py-4 py-3 rounded-xl justify-start flex gap-5">
+                                <img class="size-[50px]" src="./assets/img/svg/right-arrow-img.svg"
+                                    alt="right-arrow-img">
+                                <div>
+                                    <h4 class="font-medium xl:text-xl lg:text-lg text-base mb-1">Sign Up and Confirm
+                                    </h4>
+                                    <p
+                                        class="max-w-[376px] text-brown font-inter lg:text-base xl:leading-[165%] text-sm font-normal">
+                                        Choose
+                                        what plugin products and how many business accounts you desire.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div
+                                class="max-w-[500px] lg:min-h-[92px] hover:shadow-light-7 border-b-[2px] hover:border-transparent duration-300 ease-linear border-light-gray bg-white xl:px-[22px] lg:px-4 px-3 xl:py-4 py-3 rounded-xl justify-start flex gap-5">
+                                <img class="size-[50px]" src="./assets/img/svg/search-img.svg" alt="search-img">
+                                <div class="max-w-[387px] w-full">
+                                    <h4 class="font-medium xl:text-xl lg:text-lg text-base mb-1">Upload Documentation
+                                    </h4>
+                                    <p
+                                        class="max-w-[376px] text-brown font-inter lg:text-base xl:leading-[165%] text-sm font-normal">
+                                        Upload
+                                        and edit business registration documents. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div
+                                class="max-w-[500px] hover:shadow-light-7 border-b-[2px] hover:border-transparent duration-300 ease-linear border-light-gray bg-white xl:px-[22px] lg:px-4 px-3 xl:py-4 py-3 rounded-xl justify-start flex gap-5">
+                                <img class="size-[50px]" src="./assets/img/svg/avatar-img.svg" alt="avatar-img">
+                                <div>
+                                    <h4 class="font-medium xl:text-xl lg:text-lg text-base mb-1">Wait for Approval</h4>
+                                    <p
+                                        class="max-w-[360px] text-brown font-inter lg:text-base xl:leading-[165%] text-sm font-normal">
+                                        You
+                                        will
+                                        still be able to access our platform and some plugin allow for 3 days for bank
+                                        account approval.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- =================================== Potential Plans section ================================= -->
+    <section class="bg-light-blue py-[53px]">
+        <div class="container mx-auto px-3">
+            <h2
+                class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium text-center xl:mb-[57px] lg:mb-12 md:mb-8 mb-7">
+                Potential Plans</h2>
+            <div class="flex flex-wrap">
+                <div class="lg:w-4/12 md:w-6/12 w-full px-3 lg:py-0 py-3">
+                    <div
+                        class="px-[42px] pt-[30px] pb-[18px] lg:min-h-[551px] hover:text-white hover:bg-linear-4 hover:border-none duration-300 ease-linear group cursor-pointer border rounded-[10px] flex flex-col justify-between items-center">
+                        <div class="flex flex-col items-center">
+                            <h4 class="font-medium xl:text-xl lg:text-lg text-base lg:mb-1 group-hover:text-white">Free
+                                Forever</h4>
+                            <p
+                                class="text-brown lg:text-base text-sm font-inter group-hover:text-white text-center xl:mb-[27px] lg:mb-6 mb-5">
+                                Best
+                                for sole traders</p>
+                            <p class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white">Free
+                            </p>
+                            <p
+                                class="text-Gray lg:text-base text-sm font-inter lg:mb-[17px] group-hover:text-white md:mb-4 mb-3">
+                                Forever</p>
+                            <div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">3
+                                        Business accounts</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">1
+                                        Locked account</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">1
+                                        Linked account</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-linear-4 group-hover:bg-white w-[267px] flex justify-center py-[10px] rounded-full font-medium lg:text-lg text-base  group-hover:text-black text-white">Free
+                            Forever</button>
+                    </div>
+                </div>
+                <div class="lg:w-4/12 md:w-6/12 w-full px-3 lg:py-0 py-3">
+                    <div
+                        class="px-[42px] pt-[30px] pb-[18px] lg:min-h-[551px] hover:text-white hover:bg-linear-4 hover:border-none duration-300 ease-linear group cursor-pointer border rounded-[10px] flex flex-col justify-between items-center">
+                        <div class="flex flex-col items-center">
+                            <h4 class="font-medium xl:text-xl lg:text-lg text-base lg:mb-1 group-hover:text-white">
+                                Getting Serious</h4>
+                            <p
+                                class="text-brown lg:text-base text-sm font-inter group-hover:text-white text-center xl:mb-[27px] lg:mb-6 mb-5">
+                                Best for small business</p>
+                            <p class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white">$25
+                            </p>
+                            <p
+                                class="text-Gray lg:text-base text-sm font-inter lg:mb-[17px] group-hover:text-white md:mb-4 mb-3">
+                                Per member Per month</p>
+                            <div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="tick-img">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">
+                                        5 Business accounts</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="tick-img">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">
+                                        3 Locked account</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="tick-img">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">
+                                        3 Linked account</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="tick-img">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">
+                                        Auto transfer rules</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            class="bg-linear-4 group-hover:bg-white w-[267px] flex justify-center py-[10px] rounded-full font-medium lg:text-lg text-base  group-hover:text-black text-white">Get
+                            Started</button>
+                    </div>
+                </div>
+                <div class="lg:w-4/12 md:w-6/12 w-full px-3 lg:py-0 py-3">
+                    <div
+                        class="px-[42px] pt-[30px] pb-[18px] lg:min-h-[551px] hover:text-white hover:bg-linear-4 hover:border-none duration-300 ease-linear group cursor-pointer border rounded-[10px] flex flex-col justify-between items-center">
+                        <div class="flex flex-col items-center">
+                            <h4 class="font-medium xl:text-xl lg:text-lg text-base lg:mb-1 group-hover:text-white">I’m
+                                Serious</h4>
+                            <p
+                                class="text-brown lg:text-base text-sm font-inter group-hover:text-white text-center xl:mb-[27px] lg:mb-6 mb-5">
+                                Best for growth businesses</p>
+                            <p class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white">$35
+                            </p>
+                            <p
+                                class="text-Gray lg:text-base text-sm font-inter lg:mb-[17px] group-hover:text-white md:mb-4 mb-3">
+                                Per member Per month</p>
+                            <div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
+                                        Business accounts</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
+                                        Locked account</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
+                                        Linked account</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
+                                        Auto transfer rules</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
+                                        Auto pay rules</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
+                                        Auto reconciled rules</p>
+                                </div>
+                                <div class="flex gap-[5px] lg:mb-4 mb-3">
+                                    <img src="" alt="">
+                                    <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
+                                        24/7 support</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button
+                            class="bg-linear-4 group-hover:bg-white w-[267px] flex justify-center py-[10px] rounded-full font-medium lg:text-lg text-base  group-hover:text-black text-white">Free
+                            Forever</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
