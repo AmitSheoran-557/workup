@@ -25,9 +25,9 @@ $('.features-slider').slick({
     prevArrow: ".prev",
     responsive: [
         {
-            breakpoint: 1224,
+            breakpoint: 1200,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 3,
                 slidesToScroll: 1,
 
             }
