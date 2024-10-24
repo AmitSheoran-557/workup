@@ -25,6 +25,8 @@
         href="@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');">
     <link rel="stylesheet"
         href="@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');">
+    <link rel="stylesheet"
+        href="@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');">
 
     <!-- SLICK MIN JS LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -56,6 +58,7 @@
                     fontFamily: {
                         "inter": ["Inter", "sans-serif"],
                         "open-sans": ["Open Sans", "sans-serif"],
+                        "poppins": ["Poppins", "sans-serif"],
                     },
                     colors: {
                         "blue": "#2ABAE9",
@@ -64,10 +67,12 @@
                         "periwinkle-blue": "#86AFF0",
                         "light-black": "#3B444B",
                         "light-white": "#DBEDFA",
+                        "light-white-2": "#ffffff86",
                         "blue-white": "#208BD5",
                         "brown": "#4D4D4D",
-                        "Gray": "#808080",
+                        "Gray": "#b8b8b8",
                         "light-gray": "#ECECEC",
+                        "light-gray-2": "#cfcece69",
                     },
                     boxShadow: {
                         "default": '0px 0px 20px 10px #ABCDFE',
@@ -81,6 +86,8 @@
                         "light-5": "0px 9px 34px 0px #0000001A",
                         "light-6": "-5px -3px 28px 0px #2929291a",
                         "light-7": "0px 10px 22px 0px #0000000D",
+                        "light-8": "0px 4px 14px 0px #00000026",
+
                     },
                     backgroundImage: {
                         'hero-bg': "url('assets/img/svg/hero-sec-bg.svg')",
@@ -91,6 +98,8 @@
                         "linear-3": "linear-gradient(270.02deg, rgba(255, 255, 255, 0) 0.03%, #FFFFFF 42.75%, #FFFFFF 59.94%, rgba(255, 255, 255, 0) 100.06%)",
                         "linear-4": "linear-gradient(90.79deg, #994FFF 0.27%, #4AB6FE 98.57%)",
                         "linear-5": " linear-gradient(224.77deg, #E939D9 2.18 %, #2ABAE9 111.89 %)",
+                        "linear-6": "linear-gradient(223.31deg, #FBC524 -34.99%, #E939D9 21.89%, #2ABAE9 74.4%)",
+
                     },
                     background: {
                         "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)",
@@ -102,8 +111,8 @@
 </head>
 
 <body>
-    <!-- =================================== hero section ========================================= -->
-    <section class="bg-hero-bg w-full max-h-[800px] min-h-[800px]">
+    <!-- =================================== Hero section ========================================= -->
+    <section class="bg-hero-bg w-full bg-[#ffffff86] max-h-[800px] min-h-[800px]">
         <div class="container px-3 mx-auto">
             <nav class="flex justify-between items-center lg:py-[23px] py-4">
                 <a href="/"><img class="lg:max-w-[160px] max-w-[120px]" src="./assets/img/svg/header-logo.svg"
@@ -161,7 +170,7 @@
         </div>
     </section>
 
-    <!-- =================================== our features section ================================= -->
+    <!-- =================================== Our features section ================================= -->
     <section class="pt-[105px] pb-40">
         <div class="container mx-auto px-3 relative">
             <div class="absolute lg:-left-16 left-4 top-[54%] group ">
@@ -310,7 +319,7 @@
         </div>
     </section>
 
-    <!-- =================================== our mission section ================================= -->
+    <!-- =================================== Our mission section ================================= -->
     <section class="mb-20">
         <div class="container mx-auto px-3 w-full">
             <div
@@ -362,7 +371,7 @@
         </div>
     </section>
 
-    <!-- =================================== wait-list section ================================= -->
+    <!-- =================================== Wait-list section ================================= -->
     <section class="pb-40">
         <div class="container mx-auto px-3">
             <div
@@ -383,7 +392,7 @@
         </div>
     </section>
 
-    <!-- =================================== problem section ================================= -->
+    <!-- =================================== Problem section ================================= -->
     <section class="mb-20">
         <div class="container px-3 lg:max-w-[800px] xl:max-w-[1170px]">
             <h2 class="lg:mb-[76px] xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-center font-medium">Problem We
@@ -423,7 +432,7 @@
         </div>
     </section>
 
-    <!-- =================================== experience section ================================= -->
+    <!-- =================================== Experience section ================================= -->
     <section class="pb-40">
         <div class="container mx-auto px-3">
             <div
@@ -484,7 +493,7 @@
         </div>
     </section>
 
-    <!-- =================================== dashboard section ================================= -->
+    <!-- =================================== Dashboard section ================================= -->
     <section class="py-10">
         <div class="container px-3">
             <div
@@ -553,7 +562,7 @@
         </div>
     </section>
 
-    <!-- =================================== wait-list section 2 ================================= -->
+    <!-- =================================== Wait-list section 2 ================================= -->
     <section class="pb-40">
         <div class="container mx-auto px-3">
             <div
@@ -574,7 +583,7 @@
         </div>
     </section>
 
-    <!-- =================================== how it's working section ================================= -->
+    <!-- =================================== How it's working section ================================= -->
     <section class="bg-light-blue py-[53px]">
         <div class="container mx-auto px-3">
             <h2 class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium text-center">How it’s working</h2>
@@ -636,8 +645,8 @@
         </div>
     </section>
 
-    <!-- =================================== Potential Plans section ================================= -->
-    <section class="bg-light-blue py-[53px]">
+    <!-- =================================== Potential plans section ================================= -->
+    <section class="py-[53px]">
         <div class="container mx-auto px-3">
             <h2
                 class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium text-center xl:mb-[57px] lg:mb-12 md:mb-8 mb-7">
@@ -645,7 +654,7 @@
             <div class="flex flex-wrap">
                 <div class="lg:w-4/12 md:w-6/12 w-full px-3 lg:py-0 py-3">
                     <div
-                        class="px-[42px] pt-[30px] pb-[18px] lg:min-h-[551px] hover:text-white hover:bg-linear-4 hover:border-none duration-300 ease-linear group cursor-pointer border rounded-[10px] flex flex-col justify-between items-center">
+                        class="px-[42px] pt-[30px] pb-[18px] lg:min-h-[551px] max-h-[551px] hover:text-white hover:bg-linear-4 hover:border-none duration-300 ease-linear group cursor-pointer border rounded-[10px] flex flex-col justify-between items-center">
                         <div class="flex flex-col items-center">
                             <h4 class="font-medium xl:text-xl lg:text-lg text-base lg:mb-1 group-hover:text-white">Free
                                 Forever</h4>
@@ -653,24 +662,66 @@
                                 class="text-brown lg:text-base text-sm font-inter group-hover:text-white text-center xl:mb-[27px] lg:mb-6 mb-5">
                                 Best
                                 for sole traders</p>
-                            <p class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white">Free
+                            <p
+                                class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white linear-blue">
+                                Free
                             </p>
                             <p
                                 class="text-Gray lg:text-base text-sm font-inter lg:mb-[17px] group-hover:text-white md:mb-4 mb-3">
                                 Forever</p>
                             <div>
                                 <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">3
                                         Business accounts</p>
                                 </div>
                                 <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">1
                                         Locked account</p>
                                 </div>
                                 <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">1
                                         Linked account</p>
                                 </div>
@@ -683,36 +734,90 @@
                 </div>
                 <div class="lg:w-4/12 md:w-6/12 w-full px-3 lg:py-0 py-3">
                     <div
-                        class="px-[42px] pt-[30px] pb-[18px] lg:min-h-[551px] hover:text-white hover:bg-linear-4 hover:border-none duration-300 ease-linear group cursor-pointer border rounded-[10px] flex flex-col justify-between items-center">
+                        class="px-[42px] pt-[30px] pb-[18px] lg:min-h-[551px] max-h-[551px] hover:text-white hover:bg-linear-4 hover:border-none duration-300 ease-linear group cursor-pointer border rounded-[10px] flex flex-col justify-between items-center">
                         <div class="flex flex-col items-center">
                             <h4 class="font-medium xl:text-xl lg:text-lg text-base lg:mb-1 group-hover:text-white">
                                 Getting Serious</h4>
                             <p
                                 class="text-brown lg:text-base text-sm font-inter group-hover:text-white text-center xl:mb-[27px] lg:mb-6 mb-5">
                                 Best for small business</p>
-                            <p class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white">$25
+                            <p
+                                class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white linear-blue">
+                                <sup class="font-poppins font-semibold text-xl linear-blue">$</sup>25
                             </p>
                             <p
                                 class="text-Gray lg:text-base text-sm font-inter lg:mb-[17px] group-hover:text-white md:mb-4 mb-3">
                                 Per member Per month</p>
                             <div>
                                 <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="tick-img">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">
                                         5 Business accounts</p>
                                 </div>
                                 <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="tick-img">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">
                                         3 Locked account</p>
                                 </div>
                                 <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="tick-img">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">
                                         3 Linked account</p>
                                 </div>
                                 <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="tick-img">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">
                                         Auto transfer rules</p>
                                 </div>
@@ -725,55 +830,147 @@
                 </div>
                 <div class="lg:w-4/12 md:w-6/12 w-full px-3 lg:py-0 py-3">
                     <div
-                        class="px-[42px] pt-[30px] pb-[18px] lg:min-h-[551px] hover:text-white hover:bg-linear-4 hover:border-none duration-300 ease-linear group cursor-pointer border rounded-[10px] flex flex-col justify-between items-center">
+                        class="px-[42px] pt-[30px] pb-[18px] lg:min-h-[551px] max-h-[551px] hover:text-white hover:bg-linear-4 hover:border-none duration-300 ease-linear group cursor-pointer border rounded-[10px] flex flex-col justify-between items-center">
                         <div class="flex flex-col items-center">
                             <h4 class="font-medium xl:text-xl lg:text-lg text-base lg:mb-1 group-hover:text-white">I’m
                                 Serious</h4>
                             <p
                                 class="text-brown lg:text-base text-sm font-inter group-hover:text-white text-center xl:mb-[27px] lg:mb-6 mb-5">
                                 Best for growth businesses</p>
-                            <p class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white">$35
+                            <p
+                                class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white linear-blue">
+                                <sup class="font-poppins font-semibold text-xl linear-blue">$</sup>35
                             </p>
                             <p
                                 class="text-Gray lg:text-base text-sm font-inter lg:mb-[17px] group-hover:text-white md:mb-4 mb-3">
                                 Per member Per month</p>
                             <div>
-                                <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="">
+                                <div class="flex gap-[5px] lg:mb-3 mb-3">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
                                         Business accounts</p>
                                 </div>
-                                <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="">
+                                <div class="flex gap-[5px] lg:mb-3 mb-3">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
                                         Locked account</p>
                                 </div>
-                                <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="">
+                                <div class="flex gap-[5px] lg:mb-3 mb-3">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
                                         Linked account</p>
                                 </div>
-                                <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="">
+                                <div class="flex gap-[5px] lg:mb-3 mb-3">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
                                         Auto transfer rules</p>
                                 </div>
-                                <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="">
+                                <div class="flex gap-[5px] lg:mb-3 mb-3">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
                                         Auto pay rules</p>
                                 </div>
-                                <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="">
+                                <div class="flex gap-[5px] lg:mb-3 mb-3">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
                                         Auto reconciled rules</p>
                                 </div>
-                                <div class="flex gap-[5px] lg:mb-4 mb-3">
-                                    <img src="" alt="">
+                                <div class="flex gap-[5px] lg:mb-3 mb-3">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.99609 0.594727C4.48209 0.594727 -0.00390625 5.08073 -0.00390625 10.5947C-0.00390625 16.1087 4.48209 20.5947 9.99609 20.5947C15.5101 20.5947 19.9961 16.1087 19.9961 10.5947C19.9961 5.08073 15.5101 0.594727 9.99609 0.594727ZM7.99709 15.0077L4.28409 11.3027L5.69609 9.88673L7.99509 12.1817L13.2891 6.88773L14.7031 8.30173L7.99709 15.0077Z"
+                                            fill="url(#paint0_linear_273_2214)" />
+                                        <defs>
+                                            <linearGradient class="group-hover:hidden" id="paint0_linear_273_2214"
+                                                x1="-0.00390622" y1="4.55076" x2="19.9229" y2="4.82436"
+                                                gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#994FFF" />
+                                                <stop offset="1" stop-color="#4AB6FE" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
                                     <p class="lg:text-base text-sm font-inter text-brown group-hover:text-white">10
                                         24/7 support</p>
                                 </div>
-
                             </div>
                         </div>
                         <button
@@ -782,6 +979,244 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- =================================== Faq section ================================= -->
+    <section class="py-[53px]">
+        <div class="container mx-auto px-3">
+            <h2
+                class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium text-center xl:mb-[57px] lg:mb-9 md:mb-8 mb-7">
+                Frequently Awesome Questions</h2>
+            <div class="flex flex-wrap">
+                <div class="lg:w-6/12 w-full px-3 flex lg:justify-start justify-center">
+                    <img class="max-w-[505px] max-h-[519px] w-full" src="./assets/img/webp/faq-img.png"
+                        alt="computer-img">
+                </div>
+                <div class="lg:w-6/12 w-full px-3">
+                    <div>
+                        <div class="max-w-[627px] xl:min-w-[627px] mx-auto mt-10">
+                            <!-- Accordion Item 1 (Always Open) -->
+                            <div class="border-b border-gray-300">
+                                <div class="cursor-pointer py-[18px] flex justify-between items-center"
+                                    onclick="toggleAccordion(1)">
+                                    <h2 id="header-1"
+                                        class="lg:text-base text-sm font-medium lg:max-w-[522px] max-sm:pr-7">Q1 What is
+                                        WorkUp's
+                                        visionary
+                                        approach?</h2>
+                                    <span id="icon-1">
+                                        <svg width="12" height="3" viewBox="0 0 12 3" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.14583 2.14836C0.92482 2.14836 0.712858 2.06056 0.556578 1.90428C0.400298 1.748 0.3125 1.53604 0.3125 1.31502C0.3125 1.09401 0.400298 0.882048 0.556578 0.725767C0.712858 0.569487 0.92482 0.481689 1.14583 0.481689H11.1458C11.3668 0.481689 11.5788 0.569487 11.7351 0.725767C11.8914 0.882048 11.9792 1.09401 11.9792 1.31502C11.9792 1.53604 11.8914 1.748 11.7351 1.90428C11.5788 2.06056 11.3668 2.14836 11.1458 2.14836H1.14583Z"
+                                                fill="#2ABAE9" />
+                                        </svg>
+
+                                    </span>
+                                </div>
+                                <div id="content-1" class="pb-[18px]">
+                                    <p class="lg:text-base text-sm font-inter text-brown">WorkUp envisions becoming the
+                                        ultimate
+                                        integrated business automation platform,
+                                        leveraging AI and automation to empower business owners and accounting
+                                        professionals. Our goal is to revolutionise the accessibility and management of
+                                        financial information, leading to unparalleled efficiency and control.</p>
+                                </div>
+                            </div>
+                            <!-- Accordion Item 2 -->
+                            <div class="border-b border-gray-300">
+                                <div class="cursor-pointer py-[18px] flex justify-between items-center"
+                                    onclick="toggleAccordion(2)">
+                                    <h2 id="header-2"
+                                        class="lg:text-base text-sm font-medium lg:max-w-[522px] max-sm:pr-7">Q2 How
+                                        does
+                                        WorkUp tackle
+                                        financial
+                                        control challenges using AI?</h2>
+                                    <span id="icon-2">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9805 6.13118H7.98047V1.13118C7.98047 0.910171 7.89267 0.69821 7.73639 0.541929C7.58011 0.385649 7.36815 0.297852 7.14714 0.297852C6.92612 0.297852 6.71416 0.385649 6.55788 0.541929C6.4016 0.69821 6.3138 0.910171 6.3138 1.13118V6.13118H1.3138C1.09279 6.13118 0.880827 6.21898 0.724547 6.37526C0.568266 6.53154 0.480469 6.7435 0.480469 6.96452C0.480469 7.18553 0.568266 7.39749 0.724547 7.55377C0.880827 7.71005 1.09279 7.79785 1.3138 7.79785H6.3138V12.7979C6.3138 13.0189 6.4016 13.2308 6.55788 13.3871C6.71416 13.5434 6.92612 13.6312 7.14714 13.6312C7.36815 13.6312 7.58011 13.5434 7.73639 13.3871C7.89267 13.2308 7.98047 13.0189 7.98047 12.7979V7.79785H12.9805C13.2015 7.79785 13.4134 7.71005 13.5697 7.55377C13.726 7.39749 13.8138 7.18553 13.8138 6.96452C13.8138 6.7435 13.726 6.53154 13.5697 6.37526C13.4134 6.21898 13.2015 6.13118 12.9805 6.13118Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div id="content-2" class="hidden pb-[18px]">
+                                    <p class="lg:text-base text-sm font-inter text-brown">WorkUp envisions becoming the
+                                        ultimate
+                                        integrated business automation platform,
+                                        leveraging AI and automation to empower business owners and accounting
+                                        professionals. Our goal is to revolutionise the accessibility and management of
+                                        financial information, leading to unparalleled efficiency and control.</p>
+                                </div>
+                            </div>
+                            <!-- Accordion Item 3 -->
+                            <div class="border-b border-gray-300">
+                                <div class="cursor-pointer py-[18px] flex justify-between items-center"
+                                    onclick="toggleAccordion(3)">
+                                    <h2 id="header-3"
+                                        class="lg:text-base text-sm font-medium lg:max-w-[522px] max-sm:pr-7 ">Q3 How
+                                        does WorkUp's
+                                        real-time
+                                        automation set it apart in the realm of finance?</h2>
+                                    <span id="icon-3">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9805 6.13118H7.98047V1.13118C7.98047 0.910171 7.89267 0.69821 7.73639 0.541929C7.58011 0.385649 7.36815 0.297852 7.14714 0.297852C6.92612 0.297852 6.71416 0.385649 6.55788 0.541929C6.4016 0.69821 6.3138 0.910171 6.3138 1.13118V6.13118H1.3138C1.09279 6.13118 0.880827 6.21898 0.724547 6.37526C0.568266 6.53154 0.480469 6.7435 0.480469 6.96452C0.480469 7.18553 0.568266 7.39749 0.724547 7.55377C0.880827 7.71005 1.09279 7.79785 1.3138 7.79785H6.3138V12.7979C6.3138 13.0189 6.4016 13.2308 6.55788 13.3871C6.71416 13.5434 6.92612 13.6312 7.14714 13.6312C7.36815 13.6312 7.58011 13.5434 7.73639 13.3871C7.89267 13.2308 7.98047 13.0189 7.98047 12.7979V7.79785H12.9805C13.2015 7.79785 13.4134 7.71005 13.5697 7.55377C13.726 7.39749 13.8138 7.18553 13.8138 6.96452C13.8138 6.7435 13.726 6.53154 13.5697 6.37526C13.4134 6.21898 13.2015 6.13118 12.9805 6.13118Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div id="content-3" class="hidden pb-[18px]">
+                                    <p class="lg:text-base text-sm font-inter text-brown">WorkUp envisions becoming the
+                                        ultimate
+                                        integrated business automation platform,
+                                        leveraging AI and automation to empower business owners and accounting
+                                        professionals. Our goal is to revolutionise the accessibility and management of
+                                        financial information, leading to unparalleled efficiency and control.</p>
+                                </div>
+                            </div>
+                            <!-- Accordion Item 4 -->
+                            <div class="border-b border-gray-300">
+                                <div class="cursor-pointer py-[18px] flex justify-between items-center"
+                                    onclick="toggleAccordion(4)">
+                                    <h2 id="header-4"
+                                        class="lg:text-base text-sm font-medium lg:max-w-[522px] max-sm:pr-7">Q4 How
+                                        does
+                                        WorkUp
+                                        redefine the role
+                                        of accounting professionals with automation?</h2>
+                                    <span id="icon-4">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9805 6.13118H7.98047V1.13118C7.98047 0.910171 7.89267 0.69821 7.73639 0.541929C7.58011 0.385649 7.36815 0.297852 7.14714 0.297852C6.92612 0.297852 6.71416 0.385649 6.55788 0.541929C6.4016 0.69821 6.3138 0.910171 6.3138 1.13118V6.13118H1.3138C1.09279 6.13118 0.880827 6.21898 0.724547 6.37526C0.568266 6.53154 0.480469 6.7435 0.480469 6.96452C0.480469 7.18553 0.568266 7.39749 0.724547 7.55377C0.880827 7.71005 1.09279 7.79785 1.3138 7.79785H6.3138V12.7979C6.3138 13.0189 6.4016 13.2308 6.55788 13.3871C6.71416 13.5434 6.92612 13.6312 7.14714 13.6312C7.36815 13.6312 7.58011 13.5434 7.73639 13.3871C7.89267 13.2308 7.98047 13.0189 7.98047 12.7979V7.79785H12.9805C13.2015 7.79785 13.4134 7.71005 13.5697 7.55377C13.726 7.39749 13.8138 7.18553 13.8138 6.96452C13.8138 6.7435 13.726 6.53154 13.5697 6.37526C13.4134 6.21898 13.2015 6.13118 12.9805 6.13118Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div id="content-4" class="hidden pb-[18px]">
+                                    <p class="lg:text-base text-sm font-inter text-brown">WorkUp envisions becoming the
+                                        ultimate
+                                        integrated business automation platform,
+                                        leveraging AI and automation to empower business owners and accounting
+                                        professionals. Our goal is to revolutionise the accessibility and management of
+                                        financial information, leading to unparalleled efficiency and control.</p>
+                                </div>
+                            </div>
+                            <!-- Accordion Item 5 -->
+                            <div class="border-b border-gray-300">
+                                <div class="cursor-pointer py-[18px] flex justify-between items-center"
+                                    onclick="toggleAccordion(5)">
+                                    <h2 id="header-5"
+                                        class="lg:text-base text-sm font-medium lg:max-w-[522px] max-sm:pr-7">Q5 Why is
+                                        WorkUp the
+                                        perfect choice for businesses seeking financial empowerment?</h2>
+                                    <span id="icon-5">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9805 6.13118H7.98047V1.13118C7.98047 0.910171 7.89267 0.69821 7.73639 0.541929C7.58011 0.385649 7.36815 0.297852 7.14714 0.297852C6.92612 0.297852 6.71416 0.385649 6.55788 0.541929C6.4016 0.69821 6.3138 0.910171 6.3138 1.13118V6.13118H1.3138C1.09279 6.13118 0.880827 6.21898 0.724547 6.37526C0.568266 6.53154 0.480469 6.7435 0.480469 6.96452C0.480469 7.18553 0.568266 7.39749 0.724547 7.55377C0.880827 7.71005 1.09279 7.79785 1.3138 7.79785H6.3138V12.7979C6.3138 13.0189 6.4016 13.2308 6.55788 13.3871C6.71416 13.5434 6.92612 13.6312 7.14714 13.6312C7.36815 13.6312 7.58011 13.5434 7.73639 13.3871C7.89267 13.2308 7.98047 13.0189 7.98047 12.7979V7.79785H12.9805C13.2015 7.79785 13.4134 7.71005 13.5697 7.55377C13.726 7.39749 13.8138 7.18553 13.8138 6.96452C13.8138 6.7435 13.726 6.53154 13.5697 6.37526C13.4134 6.21898 13.2015 6.13118 12.9805 6.13118Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div id="content-5" class="hidden pb-[18px]">
+                                    <p class="lg:text-base text-sm font-inter text-brown">WorkUp envisions becoming the
+                                        ultimate
+                                        integrated business automation platform,
+                                        leveraging AI and automation to empower business owners and accounting
+                                        professionals. Our goal is to revolutionise the accessibility and management of
+                                        financial information, leading to unparalleled efficiency and control.</p>
+                                </div>
+                            </div>
+                            <!-- Accordion Item 6 -->
+                            <div class="border-b border-gray-300">
+                                <div class="cursor-pointer py-[18px] flex justify-between items-center"
+                                    onclick="toggleAccordion(6)">
+                                    <h2 id="header-6"
+                                        class="lg:text-base text-sm font-medium lg:max-w-[522px] max-sm:pr-7">Q6 How
+                                        does
+                                        WorkUp
+                                        showcase its genuine commitment to businesses' success? </h2>
+                                    <span id="icon-6">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.9805 6.13118H7.98047V1.13118C7.98047 0.910171 7.89267 0.69821 7.73639 0.541929C7.58011 0.385649 7.36815 0.297852 7.14714 0.297852C6.92612 0.297852 6.71416 0.385649 6.55788 0.541929C6.4016 0.69821 6.3138 0.910171 6.3138 1.13118V6.13118H1.3138C1.09279 6.13118 0.880827 6.21898 0.724547 6.37526C0.568266 6.53154 0.480469 6.7435 0.480469 6.96452C0.480469 7.18553 0.568266 7.39749 0.724547 7.55377C0.880827 7.71005 1.09279 7.79785 1.3138 7.79785H6.3138V12.7979C6.3138 13.0189 6.4016 13.2308 6.55788 13.3871C6.71416 13.5434 6.92612 13.6312 7.14714 13.6312C7.36815 13.6312 7.58011 13.5434 7.73639 13.3871C7.89267 13.2308 7.98047 13.0189 7.98047 12.7979V7.79785H12.9805C13.2015 7.79785 13.4134 7.71005 13.5697 7.55377C13.726 7.39749 13.8138 7.18553 13.8138 6.96452C13.8138 6.7435 13.726 6.53154 13.5697 6.37526C13.4134 6.21898 13.2015 6.13118 12.9805 6.13118Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div id="content-6" class="hidden pb-[18px]">
+                                    <p class="lg:text-base text-sm font-inter text-brown">WorkUp envisions becoming the
+                                        ultimate
+                                        integrated business automation platform,
+                                        leveraging AI and automation to empower business owners and accounting
+                                        professionals. Our goal is to revolutionise the accessibility and management of
+                                        financial information, leading to unparalleled efficiency and control.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== Free demo section  ================================= -->
+    <section class="pb-40">
+        <div class="container mx-auto px-3">
+            <div
+                class="blue-box bg-linear-2 xl:pt-[29px] lg:pt-6 md:pt-5 pt-4 flex flex-col justify-center items-center rounded-2xl max-w-[973px] lg:min-h-[198px] md:min-h-[170px] min-h-[150px] mx-auto relative">
+                <img class="absolute left-0 bottom-7 max-w-[377px]" src="./assets/img/webp/free-demo-sec-img.png"
+                    alt="lines-img">
+                <img class="absolute right-0 bottom-0 max-w-[377px]" src="./assets/img/webp/free-demo-sec-img-2.png"
+                    alt="lines-img-2">
+                <h2
+                    class="lg:mb-[19px] md:mb-4 mb-3 font-medium xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-white text-center">
+                    Join Free Demo</h2>
+                <div
+                    class="relative lg:py-2 py-1 lg:px-2 px-1 bg-white rounded-[35px] mb-[22px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full border-blue border-[1px]">
+                    <input type="email" required
+                        class="font-normal ps-[14px] outline-none max-w-[350px] w-full lg:text-base text-sm leading-[118%] bg-transparent"
+                        placeholder="Enter your email">
+                    <img class="lg:max-w-[69px] max-w-[47px] cursor-pointer" src="./assets/img/webp/email-right-img.png"
+                        alt="right-arrow">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== Footer section  ================================= -->
+    <section class="bg-linear-6 pt-28">
+        <div class="container mx-auto px-3">
+            <div class="flex flex-wrap">
+                <div class="lg:w-6/12 w-full px-3">
+                    <img class="max-w-[160px] lg:mb-[22px] md:mb-4 mb-3" src="./assets/img/webp/footer-logo-img.png"
+                        alt="page-logo">
+                    <p class="max-w-[435px] font-inter font-medium lg:text-sm text-xs mb-3">The is a long established
+                        fact
+                        that a reader will be distracted by the readable content of a page when looking at its layout.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="size-[34px] flex justify-center items-center bg-white rounded-full hover:light-8"
+                            href="">
+                            <img src="./assets/img/svg/facebook-logo.svg" alt="facebook-logo">
+                            </a>
+                    </div>
+                </div>
+                <div class="lg:w-6/12 w-full px-3"></div>
+            </div>
+        </div>
+        <div class="bg-light-gray-2 w-full h-[2px]"></div>
+        <div class="pt-4 pb-[22px]">
+            <p class="text-center font-medium lg:text-lg text-base text-light-white-2">Copyright 2023 JesMor
+                Enterprises, All Rights Reserved.</p>
         </div>
     </section>
 

@@ -14,7 +14,14 @@
     overflow: hidden;
 }
 
-/* ========================= slider css ============================= */    
+.group:hover svg path {
+    fill: white;
+}
+.text-white{
+    color: white !important;
+}
+
+/* ========================= slider css ============================= */
 
 .slick-track {
     display: flex !important;
@@ -22,7 +29,3 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.tg{
-    letter-spacing: 1px;
-}
- 
