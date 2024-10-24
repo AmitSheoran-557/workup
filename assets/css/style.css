@@ -17,8 +17,12 @@
 .group:hover svg path {
     fill: white;
 }
-.text-white{
+
+.text-white {
     color: white !important;
+}
+.leading-max{
+    line-height: 118% !important;
 }
 
 /* ========================= slider css ============================= */
