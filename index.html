@@ -24,9 +24,9 @@
     <link rel="stylesheet"
         href="@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');">
     <link rel="stylesheet"
-        href="@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');">
+        href="@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');">
     <link rel="stylesheet"
-        href="@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');">
+        href="@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');">
 
     <!-- SLICK MIN JS LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -57,7 +57,7 @@
                     },
                     fontFamily: {
                         "inter": ["Inter", "sans-serif"],
-                        "open-sans": ["Open Sans", "sans-serif"],
+                        "open": ["Open Sans", "sans-serif"],
                         "poppins": ["Poppins", "sans-serif"],
                     },
                     colors: {
@@ -72,6 +72,7 @@
                         "brown": "#4D4D4D",
                         "light-brown": "#666666",
                         "light-brown-2": "#333333",
+                        "light-brown-3": " #FFFFFFB2",
                         "Gray": "#b8b8b8",
                         "light-gray": "#ECECEC",
                         "light-gray-2": "#FFFFFF1A",
@@ -95,7 +96,7 @@
                     backgroundImage: {
                         'hero-bg': "url('assets/img/svg/hero-sec-bg.svg')",
                         'blue-bg': "url('assets/img/webp/our-section-bg.webp')",
-                        "blue-pink": "linear-gradient(226.79deg, #E939D9 -11.53%, #2ABAE9 92.1%)",
+                        "blue-pink": 'linear-gradient(90.79deg, #994FFF 0.27%, #4AB6FE 98.57%), linear-gradient(224.77deg, #E939D9 3.61%, #2ABAE9 111.89%)',
                         "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)",
                         "linear-2": "linear-gradient(104.91deg, #2ABAE9 0%, #1B77CC 100%)",
                         "linear-3": "linear-gradient(270.02deg, rgba(255, 255, 255, 0) 0.03%, #FFFFFF 42.75%, #FFFFFF 59.94%, rgba(255, 255, 255, 0) 100.06%)",
@@ -116,7 +117,7 @@
     <main class="overflow-hidden">
         <!-- =================================== Hero section ========================================= -->
         <section class="bg-hero-bg w-full bg-[#ffffff86] max-h-[800px] min-h-[800px] relative">
-            <img class="absolute lg:-bottom-[35%] md:bottom-0 sm:bottom-[20%] bottom-[30%] lg:max-w-[428px] max-w-48 w-full left-0"
+            <img class="absolute lg:-bottom-[31%] md:bottom-0 sm:bottom-[20%] bottom-[30%] lg:max-w-[360px] max-w-48 w-full left-0"
                 src="./assets/img/svg/hero-sec-bg-left-img.svg" alt="gradient-lines-img">
             <img class="absolute lg:top-0 top-[7%] right-0 lg:max-w-[462px] max-w-64 w-full"
                 src="./assets/img/svg/hero-sec-bg-right-img.svg" alt="gradient-lines-img">
@@ -159,12 +160,12 @@
                     class="font-semibold xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-center leading-max  mb-2">
                     Superpower your business finance </h1>
                 <p
-                    class="font-normal xl:text-2xl lg:text-xl md:text-lg text-base leading-max lg:mb-8 mb-6 text-center max-sm:max-w-64">
+                    class="font-normal xl:text-2xl lg:text-xl md:text-lg text-base leading-max lg:mb-[30px] mb-6 text-center max-sm:max-w-64">
                     Be empowered to completely run your finances
                     on autopilot</p>
 
                 <div
-                    class="relative p-[1px] bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] rounded-full mb-[22px] lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
+                    class="relative p-[1px] bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] rounded-full mb-[17px] lg:max-w-[466px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
                     <img class="absolute -top-6 w-full lg:min-w-[564px] -left-12 border-br"
                         src="./assets/img/webp/email-bg-shadow.webp" alt="shadow-img">
                     <div
@@ -185,13 +186,15 @@
 
         <!-- =================================== Our features section ================================= -->
         <section
-            class="xl:pt-[123px] lg:pt-20 max-lg:-mt-44 max-md:-mt-56 max-sm:-mt-64 xl:pb-[94px] lg:pb-20 md:pb-26 pb-12 relative">
-            <img class="absolute pointer-events-none xl:max-w-12 lg:max-w-10 sm:max-w-8 max-w-6 w-full right-0 xl:top-[33.4%] lg:top-[20%] top-[15%]"
+            class="xl:pt-[110px] lg:pt-20 max-lg:-mt-44 max-md:-mt-56 max-sm:-mt-64 xl:pb-[92px] lg:pb-20 md:pb-26 pb-12 relative">
+            <img class="absolute pointer-events-none xl:max-w-12 lg:max-w-10 sm:max-w-8 max-w-6 w-full right-0 xl:top-[31.4%] lg:top-[20%] top-[15%]"
                 src="./assets/img/webp/dot-img.webp" alt="dots-img-2">
-            <img class="absolute pointer-events-none max-lg:hidden xl:max-w-48 lg:max-w-16 right-0 top-12"
+            <img class="absolute pointer-events-none max-lg:hidden xl:max-w-48 lg:max-w-16 right-0 top-10"
                 src="./assets/img/svg/right-gradient-line-1.svg" alt="gradient-line-img">
             <img class="absolute pointer-events-none bottom-[86px] max-lg:hidden xl:right-[24%] lg:right-[22%] xl:max-w-[167px] lg:max-w-32 max-w-24"
                 src="./assets/img/webp/dot-img-2.webp" alt="dots-img">
+            <img class="absolute pointer-events-none xl:max-w-12 lg:max-w-10 md:max-w-8 max-w-7 xl:-left-5 -left-4 xl:top-[32%] top-[30%]"
+                src="./assets/img/webp/dot-img.webp" alt="dot-img">
 
             <div class="container mx-auto px-3 relative z-50">
                 <div
@@ -349,7 +352,7 @@
         </section>
 
         <!-- =================================== Our mission section ================================= -->
-        <section class="xl:mb-[92px] lg:mb-16 md:mb-14 mb-12 relative">
+        <section class="xl:mb-[89px] lg:mb-16 md:mb-14 mb-12 relative">
             <img class="absolute pointer-events-none xl:max-w-44 lg:max-w-28 max-lg:hidden right-0 -bottom-28"
                 src="./assets/img/svg/right-gradient-line-3.svg" alt="gradient-line-img">
             <img class="absolute pointer-events-none xl:max-w-12 lg:max-w-10 max-w-7 -right-6 -bottom-[150px]"
@@ -359,7 +362,7 @@
                     class="bg-blue-pink xl:h-[791px] lg:h-[702px] h-full lg:w-[103%] object-cover max-w-[1140px] rounded-xl overflow-hidden relative">
                     <img class="absolute pointer-events-none max-w-[241px] top-0 xl:left-[421px] lg:left-96 md:left-52 left-10"
                         src="./assets/img/webp/our-misson-section-img.webp" alt="circle-img">
-                    <img class="absolute pointer-events-none xl:max-w-[240px] lg:max-w-48 max-w-36 right-0 xl:top-[280px] lg:top-56 bottom-0 w-full"
+                    <img class="absolute pointer-events-none xl:max-w-[230px] lg:max-w-48 max-w-36 right-0 xl:top-[280px] lg:top-56 bottom-0 w-full"
                         src="./assets/img/webp/our-mission-section-img-2.webp" alt="circle-img-2">
                     <div>
                         <div class="flex flex-wrap w-full justify-center relative z-50">
@@ -368,7 +371,7 @@
                                     class="lg:mb-6 md:mb-4 mb-2 xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium text-white text-center lg:text-start blue-line after:bg-white after:max-w-[111px] relative translate-x-0">
                                     Our Mission</h3>
                                 <p
-                                    class="lg:text-base text-sm max-w-[420px] text-white font-inter text-center lg:text-start">
+                                    class="lg:text-base text-sm max-w-[392px] text-light-brown-3 font-inter text-center lg:text-start">
                                     Our mission is to harness
                                     the power of AI-driven automation to empower Australian businesses. We
                                     propel all sized businesses towards success by automating financial tasks, from tax
@@ -392,12 +395,12 @@
                                     src="./assets/img/webp/mobile-laptop-img-1.webp" alt="mobile-and-laptop-img">
                             </div>
                             <div
-                                class="lg:w-6/12 w-full flex max-lg:justify-center flex-col max-lg:items-center xl:pt-24 md:pt-6 pt-3 md:pl-10 px-3">
+                                class="lg:w-6/12 w-full flex max-lg:justify-center flex-col max-lg:items-center xl:pt-[104px] md:pt-6 pt-3 md:pl-10 px-3">
                                 <h3
                                     class="lg:mb-6 md:mb-4 mb-2 xl:text-4xl-2 blue-line relative after:bg-white after:m max-w-[140px] lg:text-4xl md:text-3xl text-2xl font-medium text-white text-center lg:text-start">
                                     Solution</h3>
                                 <p
-                                    class="lg:text-base text-sm max-w-[370px] text-white font-inter text-center lg:text-start max-lg:pb-5">
+                                    class="lg:text-base text-sm max-w-[370px] text-light-brown-3 font-inter text-center lg:text-start max-lg:pb-5">
                                     We grasp the struggles of
                                     business finance management and the risks of losing control. WorkUp's AI automation
                                     solution
@@ -413,10 +416,10 @@
         </section>
 
         <!-- =================================== Wait-list section ================================= -->
-        <section class="xl:pb-[148px] lg:pb-24 md:pb-16 sm:pb-14 pb-12">
+        <section class="xl:pb-[153px] lg:pb-24 md:pb-16 sm:pb-14 pb-12">
             <div class="container mx-auto px-3">
                 <div
-                    class="blue-box bg-linear-2 xl:pt-[29px] lg:pt-6 md:pt-5 pt-4 flex flex-col  items-center rounded-2xl max-w-[761px] w-full lg:min-h-[204px] md:min-h-[170px] min-h-[120px] mx-auto">
+                    class="blue-box bg-linear-2 xl:pt-[29px] lg:pt-6 md:pt-5 pt-4 flex flex-col  items-center rounded-2xl max-w-[761px] w-full lg:min-h-[198px] md:min-h-[170px] min-h-[120px] mx-auto">
                     <h2
                         class=" lg:mb-[19px] md:mb-4 mb-3 font-medium xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-white text-center leading-max">
                         Join our waitlist</h2>
@@ -436,11 +439,11 @@
         </section>
 
         <!-- =================================== Problem section ================================= -->
-        <section class="xl:mb-24 lg:mb-16 md:mb-14 sm:mb-11 mb-9">
+        <section class="xl:mb-[96px] lg:mb-16 md:mb-14 sm:mb-11 mb-9">
             <div class="container px-3 lg:max-w-[800px] xl:max-w-[1170px]">
                 <div class="max-w-max mx-auto">
                     <h2
-                        class="lg:mb-[72px] md:mb-16 text-light-brown-2 sm:mb-10 mb-7 xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-center font-medium blue-line relative after:bg-blue after:max-w-[144px] after:-top-4 after:translate-x-32 left-0">
+                        class="lg:mb-[68px] md:mb-16 text-light-brown-2 sm:mb-10 mb-7 xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl text-center font-medium blue-line relative after:bg-blue after:max-w-[144px] after:-top-4 after:translate-x-32 left-0">
                         Problem
                         We
                         are solving</h2>
@@ -486,10 +489,14 @@
         </section>
 
         <!-- =================================== Experience section ================================= -->
-        <section class="xl:pb-[132px] lg:pb-[99px] md:pb-16 sm:pb-14 pb-12">
+        <section class="xl:pb-[128px] lg:pb-[99px] md:pb-16 sm:pb-14 pb-12 relative">
+            <img class="absolute pointer-events-none xl:max-w-[108px] lg:max-w-14 md:max-w-12 max-w-7  xl:-top-[31%]  lg:-top-[34%]  md:-top-[33%] -top-[16%]"
+                src="./assets/img/webp/left-gradient-line-img.webp" alt="gradient-line-img">
+            <img class="absolute pointer-events-none xl:max-w-12 lg:max-w-10 md:max-w-8 max-w-7 xl:-left-5 -left-4 xl:top-20 top-0"
+                src="./assets/img/webp/dot-img.webp" alt="dot-img">
             <div class="container mx-auto px-3">
                 <div
-                    class="flex justify-center flex-col shadow-light-5 rounded-xl bg-blue-pink w-full lg:min-h-[237px] xl:px-[119px] lg:px-20 md:px-16 sm:px-12 px-7 xl:py-[52px] lg:py-10 md:py-7 py-5">
+                    class="flex justify-center flex-col shadow-light-5 rounded-xl bg-blue-pink w-full lg:min-h-[233px] xl:max-h-[233px] xl:px-[119px] lg:px-20 md:px-16 sm:px-12 px-7 xl:py-[52px] lg:py-10 md:py-7 py-5">
                     <div class="flex flex-wrap justify-center items-center">
                         <div class="lg:w-3/12 md:w-6/12 w-full relative max-lg:justify-center flex">
                             <img class="absolute lg:right-3 right-0 lg:-translate-y-7 translate-y-2 w-[1.7px] max-h-[128px] max-md:hidden"
@@ -547,7 +554,7 @@
         </section>
 
         <!-- =================================== Dashboard section ================================= -->
-        <section class="xl:pb-[104px] lg:pb-20 md:pb-16 sm:pb-14 pb-12 relative">
+        <section class="xl:pb-[97px] lg:pb-20 md:pb-16 sm:pb-14 pb-12 relative">
             <img class="absolute pointer-events-none xl:max-w-44 lg:max-w-20  max-lg:hidden right-0 top-[45.5%]"
                 src="./assets/img/svg/right-gradient-line-3.svg" alt="">
             <div class="container px-3">
@@ -562,7 +569,7 @@
                                 <h4 class="font-semibold lg:text-2xl md:text-xl text-lg lg:mb-[12px] mb-2 max-lg:pt-5">
                                     Updated with your
                                     Dashboard</h4>
-                                <p class="max-w-[443px] text-inter text-brown lg:text-base text-sm">Lorem ipsum dolor
+                                <p class="max-w-[443px] font-inter text-brown lg:text-base text-sm">Lorem ipsum dolor
                                     sit
                                     amet consectetur. Non eget amet et vel amet at quisque tincidunt
                                     ornare. Erat at sed aenean vestibulum pellentesque vulputate. </p>
@@ -587,7 +594,7 @@
                                     <h4 class="font-semibold lg:text-2xl md:text-xl text-lg lg:mb-[10px] mb-2">Accounts
                                     </h4>
                                     <p
-                                        class="max-w-[443px] max-sm:px-5 text-inter text-brown lg:text-base max-lg:pb-5 text-sm">
+                                        class="max-w-[443px] max-sm:px-5 font-inter text-brown lg:text-base max-lg:pb-5 text-sm">
                                         Lorem ipsum
                                         dolor
                                         sit
@@ -609,7 +616,7 @@
                                 class="lg:w-6/12 w-full flex flex-col justify-center  max-lg:items-center max-lg:text-center">
                                 <h4 class="font-semibold lg:text-2xl md:text-xl text-lg lg:mb-[12px] mb-2  max-lg:pt-5">
                                     Cards</h4>
-                                <p class="max-w-[423px] text-inter text-brown lg:text-base text-sm">Lorem ipsum dolor
+                                <p class="max-w-[423px] font-inter text-brown lg:text-base text-sm">Lorem ipsum dolor
                                     sit
                                     amet consectetur. Non eget amet et vel amet at quisque tincidunt
                                     ornare. Erat at sed aenean vestibulum pellentesque vulputate. </p>
@@ -650,7 +657,7 @@
 
         <!-- =================================== How it's working section ================================= -->
         <section
-            class="bg-light-blue xl:pt-[75px] lg:pt-12 md:pt-10 pt-7 xl:pb-[62px] md:pb-10 sm:pb-7 pb-6 xl:mb-[126px] lg:mb-20 md:mb-16 sm:mb-14 mb-12 relative overflow-y-hidden">
+            class="bg-light-blue xl:pt-[68px] lg:pt-12 md:pt-10 pt-7 xl:pb-[78px] md:pb-10 sm:pb-7 pb-6 xl:mb-[131px] lg:mb-20 md:mb-16 sm:mb-14 mb-12 relative overflow-y-hidden">
             <img class="absolute pointer-events-none left-0 top-3 xl:max-w-16 lg:max-w-10 max-w-7 w-full"
                 src="./assets/img/webp/left-gradient-line-img.webp" alt="gradient-line-img">
             <img class="absolute pointer-events-none left-0 -top-6 xl:max-w-12 lg:max-w-10 max-w-7 w-full"
@@ -663,11 +670,11 @@
                         working</h2>
                 </div>
                 <div class="flex flex-wrap justify-center">
-                    <div class="lg:w-7/12 px-3 lg:mt-0 mt-10 flex justify-cente">
-                        <img class="xl:max-w-[490px] lg:max-w-[450px] sm:max-w-96 max-w-72 w-full"
+                    <div class="lg:w-6/12 px-3 lg:mt-0 mt-10 flex justify-cente">
+                        <img class="xl:max-h-[490px] lg:max-h-[340px] xl:max-w-[471px] lg:max-w-[340px] sm:max-w-96 max-w-72 w-full"
                             src="./assets/img/webp/working-sec-img.webp" alt="component-img">
                     </div>
-                    <div class="lg:w-5/12 px-3 flex flex-col xl:pt-[70px] pt-10 lg:mt-0 mt-10">
+                    <div class="lg:w-6/12 max-lg:px-3 flex flex-col xl:pt-[70px] pt-10 lg:mt-0 mt-10  items-end">
                         <div class="relative">
                             <img class="absolute pointer-events-none lg:-left-[50px] -left-8 top-[59px] max-sm:hidden lg:max-h-[269px] max-h-[180px]"
                                 src="./assets/img/svg/transfer-line-2.svg" alt="">
@@ -735,7 +742,7 @@
             <div class="container mx-auto px-3">
                 <div class="mx-auto max-w-max">
                     <h2
-                        class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium lg:leading-[125%] text-center xl:mb-[60px] lg:mb-12 md:mb-8 mb-7 blue-line relative after:bg-blue after:-top-3 after:max-w-[143px] after:translate-x-[60px]">
+                        class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium lg:leading-[125%] text-center xl:mb-[53px] lg:mb-12 md:mb-8 mb-7 blue-line relative after:bg-blue after:-top-3 after:max-w-[143px] after:translate-x-[60px]">
                         Potential Plans</h2>
                 </div>
                 <div class="flex flex-wrap justify-center">
@@ -751,7 +758,7 @@
                                     Best
                                     for sole traders</p>
                                 <p
-                                    class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent">
+                                    class="text-5xl font-semibold font-open pb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent">
                                     Free
                                 </p>
                                 <p
@@ -834,7 +841,7 @@
                                     class="text-brown lg:text-base text-sm font-inter group-hover:text-white text-center xl:mb-[27px] lg:mb-6 mb-5">
                                     Best for small business</p>
                                 <p
-                                    class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent">
+                                    class="text-5xl font-semibold font-open lg:mb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent">
                                     <sup
                                         class="font-poppins font-semibold text-xl group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent">$</sup>25
                                 </p>
@@ -936,7 +943,7 @@
                                     class="text-brown lg:text-base text-sm font-inter group-hover:text-white text-center xl:mb-[27px] lg:mb-6 mb-5">
                                     Best for growth businesses</p>
                                 <p
-                                    class="text-4xl-2 font-semibold font-open-sans lg:mb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent">
+                                    class="text-5xl font-semibold font-open  lg:mb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent">
                                     <sup
                                         class="font-poppins font-semibold text-xl group-hover:text-white    bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent">$</sup>35
                                 </p>
@@ -1086,7 +1093,7 @@
         </section>
 
         <!-- =================================== Faq accordion section ================================= -->
-        <section class="xl:pb-[90px] xl:pt-[91px] lg:pt-16 md:pt-12 sm:pt-10 pt-7 lg:pb-16 md:pb-14 pb-12 relative">
+        <section class="xl:pb-[90px] xl:pt-[87px] lg:pt-16 md:pt-12 sm:pt-10 pt-7 lg:pb-16 md:pb-14 pb-12 relative">
             <img class="absolute pointer-events-none xl:max-w-16 lg:max-w-12 max-w-7 right-0 xl:top-7 max-xl:top-10"
                 src="./assets/img/webp/right-gradient-line-2.webp" alt="gradient-line-img">
             <div class="container mx-auto px-3">
@@ -1096,13 +1103,13 @@
                         Frequently Awesome Questions</h2>
                 </div>
                 <div class="flex flex-wrap">
-                    <div class="lg:w-5/12 w-full xl:ps-3 max-lg:pt-5 flex lg:justify-start lg:pt-16 justify-center">
-                        <img class="lg:max-w-[405px] max-w-[305px] lg:max-h-[383px] max-h-[319px] max-sm:px-3 lg:pb-2 w-full" src="./assets/img/webp/faq-sec-img.webp"
-                            alt="computer-img">
+                    <div class="lg:w-5/12 w-full xl:ps-4 max-lg:pt-5 flex lg:justify-start lg:pt-16 justify-center">
+                        <img class="lg:max-w-[405px] max-w-[305px] lg:max-h-[397px] max-h-[319px] max-sm:px-3 lg:pb-2 w-full"
+                            src="./assets/img/webp/faq-sec-img.webp" alt="computer-img">
                     </div>
                     <div class="lg:w-7/12 w-full px-3 ">
                         <div class="flex justify-start flex-col items-start">
-                            <div class="max-w-[627px] xl:min-w-[627px] mx-auto pt-3">
+                            <div class="max-w-[627px] xl:min-w-[627px] mx-auto pt-1">
                                 <!-- Accordion Item 1 (Always Open) -->
                                 <div class="border-b border-gray-300">
                                     <div class="cursor-pointer py-[18px] flex justify-between items-center"
@@ -1338,7 +1345,7 @@
         <section class="bg-linear-6 lg:pt-[118px] pt-24 relative">
             <div class="container mx-auto px-3">
                 <div class="flex flex-wrap ">
-                    <div class="lg:w-6/12 w-full px-3">
+                    <div class="lg:w-6/12 w-full px-3 pb-2">
                         <a href="/"><img class="max-w-[160px] lg:mb-[22px] md:mb-4 mb-3"
                                 src="./assets/img/webp/footer-logo-img.webp" alt="page-logo"></a>
                         <p class="max-w-[435px] font-inter font-medium lg:text-sm text-xs mb-3 text-[#FFFFFFB2]">The is
@@ -1371,7 +1378,7 @@
                         <div class="flex flex-wrap lg:justify-end">
                             <div class="lg:w-6/12 w-6/12 flex lg:justify-end justify-center">
                                 <div class="text-white ">
-                                    <h4 class="mb-[10px] font-open-sans font-semibold xl:text-xl lg:text-lg text-base">
+                                    <h4 class="mb-[10px] font-open font-semibold xl:text-xl lg:text-lg text-base">
                                         Home
                                     </h4>
                                     <div class="font-inter font-medium lg:text-sm text-xs flex flex-col gap-[14px]">
@@ -1387,7 +1394,7 @@
                             </div>
                             <div class="lg:w-4/12 w-6/12 flex lg:justify-end justify-center max-sm:justify-end">
                                 <div class="text-white ">
-                                    <h4 class="mb-[10px] font-open-sans font-semibold xl:text-xl lg:text-lg text-base">
+                                    <h4 class="mb-[10px] font-open font-semibold xl:text-xl lg:text-lg text-base">
                                         Links
                                     </h4>
                                     <div class="font-inter font-medium lg:text-sm text-xs flex flex-col gap-[13px]">
