@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
 * {
     font-family: "Outfit", sans-serif;
 }
@@ -8,6 +8,9 @@
     background: linear-gradient(90.79deg, #994FFF 0.27%, #4AB6FE 98.57%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.font-open{
+    font-family: "Open Sans", serif;
 }
 
 .overflow-lg-hidden {
