@@ -5,14 +5,38 @@ const menubarSecond = document.querySelector(".menubarSecond");
 const menubarThird = document.querySelector(".menubarThird");
 const body = document.body;
 
-menuicon.addEventListener("click", function () {
-    menuList.classList.toggle("-right-full");
-    menuList.classList.toggle("right-0");
-    menubarFirst.classList.toggle("rotate-[40deg]");
-    menubarSecond.classList.toggle("hidden");
-    menubarThird.classList.toggle("-rotate-[40deg]");
-    body.classList.toggle("overflow-lg-hidden")
-})
+menuicon.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+    if (window.innerWidth < 992) {
+        menuList.classList.toggle("-right-full");
+        menuList.classList.toggle("right-0");
+        menubarFirst.classList.toggle("rotate-[40deg]");
+        menubarSecond.classList.toggle("hidden");
+        menubarThird.classList.toggle("-rotate-[40deg]");
+        body.classList.toggle("overflow-hidden");
+    }
+}
+const menuItems = document.querySelectorAll(".menulist button, .menulist a");
+menuItems.forEach(item => {
+    item.addEventListener("click", () => {
+        if (window.innerWidth < 992) {
+            toggleMenu();
+        }
+    });
+});
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 992) {
+        menuList.classList.add("-right-full");
+        menuList.classList.remove("right-0");
+        menubarFirst.classList.remove("rotate-[40deg]");
+        menubarSecond.classList.remove("hidden");
+        menubarThird.classList.remove("-rotate-[40deg]");
+        body.classList.remove("overflow-hidden");
+    }
+});
+
 // ======================================================
 $('.features-slider').slick({
     dots: true,

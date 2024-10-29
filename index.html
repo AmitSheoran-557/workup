@@ -91,7 +91,7 @@
                     backgroundImage: {
                         'hero-bg': "url('assets/img/svg/hero-sec-bg.svg')",
                         'blue-bg': "url('assets/img/webp/our-section-bg.webp')",
-                        "blue-pink": 'linear-gradient(90.79deg, #994FFF 0.27%, #4AB6FE 98.57%), linear-gradient(224.77deg, #E939D9 3.61%, #2ABAE9 111.89%)',
+                        "blue-pink": "linear-gradient(90.79deg, #994FFF 0.27%, #4AB6FE 98.57%), linear-gradient(224.77deg, #E939D9 3.61%, #2ABAE9 111.89%)",
                         "linear-1": "linear-gradient(223.49deg, #FBC524 -75.58%, #E939D9 2.42%, #2ABAE9 74.42%)",
                         "linear-2": "linear-gradient(104.91deg, #2ABAE9 0%, #1B77CC 100%)",
                         "linear-3": "linear-gradient(270.02deg, rgba(255, 255, 255, 0) 0.03%, #FFFFFF 42.75%, #FFFFFF 59.94%, rgba(255, 255, 255, 0) 100.06%)",
@@ -111,26 +111,26 @@
 <body>
     <main class="overflow-hidden">
         <!-- =================================== Hero section ========================================= -->
-        <section class="bg-hero-bg w-full bg-[#ffffff86] max-h-[800px] lg:min-h-[800px] sm:min-h-[750px] min-h-[700px] relative">
-            <img class="absolute lg:-bottom-[31%] md:bottom-0 sm:bottom-[20%] bottom-[30%] lg:max-w-[360px] max-w-48 w-full left-0"
+        <section class="bg-hero-bg w-full max-h-[800px] lg:min-h-[800px] sm:min-h-[750px] min-h-[700px] relative">
+            <img class="absolute lg:-bottom-[31%] md:bottom-0 sm:bottom-[20%] bottom-[30%] lg:max-w-[360px] max-w-48 w-full left-0 -z-10"
                 src="./assets/img/svg/hero-sec-bg-left-img.svg" alt="gradient-lines-img">
             <img class="absolute lg:top-0 top-[7%] right-0 lg:max-w-[462px] max-w-64 w-full"
                 src="./assets/img/svg/hero-sec-bg-right-img.svg" alt="gradient-lines-img">
-            <div class="container px-3 mx-auto">
+            <div class="container px-3 mx-auto ">
                 <nav class="flex justify-between items-center lg:py-[23px] py-4">
                     <a href="/"><img class="lg:max-w-[160px] max-w-[120px]" src="./assets/img/svg/header-logo.svg"
                             alt="header-logo"></a>
                     <div
                         class="gap-[25px] flex flex-col menulist justify-center items-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 bg-blue z-[100] lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
                         <div
-                            class="flex lg:flex-row flex-col gap-8 items-center font-inter lg:text-base text-sm font-normal leading-max text-light-black">
+                            class="flex lg:flex-row flex-col lg:gap-8 gap-5 items-center font-inter lg:text-base text-sm font-normal leading-max text-light-black">
                             <a class="lg:hover:text-blue-white hover:text-white duration-300 ease-linear"
-                                href="#chat">Chat
+                                href="#chatroom">Chat
                                 Room</a>
                             <a class="lg:hover:text-blue-white hover:text-white duration-300 ease-linear"
                                 href="#invest">Invest</a>
                             <a class="lg:hover:text-blue-white hover:text-white duration-300 ease-linear"
-                                href="#co-founder">Become a
+                                href="#cofounder">Become a
                                 Co-Founder</a>
                             <button
                                 class="px-6 py-3 text-blue duration-300 ease-linear lg:hover:shadow-default hover:shadow-secondary bg-white border-none hover:bg-blue hover:text-white rounded-full font-semibold leading-max">Log
@@ -152,21 +152,21 @@
                     <p class="px-3 py-1 linear-blue lg:text-base text-sm">Empowering Autopilot Automation</p>
                 </div>
                 <h1
-                    class="font-semibold xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-center max-sm:max-w-[340px] leading-max  mb-2">
+                    class="font-semibold xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl max-lg:pb-2 max-sm:pb-1 text-center max-sm:max-w-[340px] leading-max mb-2">
                     Superpower your business finance </h1>
                 <p
-                    class="font-normal xl:text-2xl lg:text-xl md:text-lg text-base leading-max lg:mb-[30px] mb-6 text-center max-sm:max-w-64">
+                    class="font-normal xl:text-2xl lg:text-xl md:text-lg text-base leading-max lg:mb-[30px] max-lg:pb-2 max-sm:pb-0 mb-6 text-center max-sm:max-w-64">
                     Be empowered to completely run your finances
                     on autopilot</p>
 
                 <div
-                    class="relative p-[1px] bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] rounded-full mb-[17px] lg:max-w-[466px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
-                    <img class="absolute -top-6 w-full lg:min-w-[564px] -left-12 border-br"
+                    class="relative p-[1px] bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] rounded-full mb-[17px] max-lg:mb-7 max-sm:mb-1 xl:max-w-[466px] lg:max-w-[406px] md:max-w-72 sm:max-w-72 max-w-64 justify-between w-full">
+                    <img class="absolute xl:-top-6 w-full xl:min-w-[564px] lg:min-w-[504px] xl:-left-11 lg:-left-11 lg:-top-3 md:-top-4 -top-2 md:-left-8 md:min-w-[370px] border-br"
                         src="./assets/img/webp/email-bg-shadow.webp" alt="shadow-img">
                     <div
-                        class="relative lg:py-2 py-1 lg:px-2 px-1 hover:shadow-light-9 duration-200 ease-linear bg-white rounded-[35px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
+                        class="relative lg:py-2 py-1 lg:px-2 px-1 duration-200 ease-linear bg-white rounded-[35px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
                         <input type="email" required
-                            class="font-normal ps-[14px] outline-none max-w-[350px] w-full placeholder:text-light-brown text-light-brown lg:text-base text-sm leading-max bg-transparent"
+                            class="font-normal ps-[14px] outline-none max-w-[350px] w-full placeholder:font-inter placeholder:text-light-brown text-light-brown lg:text-base text-sm leading-max bg-transparent"
                             placeholder="Enter email to join waitlist">
                         <img class="lg:max-w-[69px] max-w-[47px] cursor-pointer hover:scale-[1.04] duration-150 ease-linear rounded-full"
                             src="./assets/img/webp/email-right-img.webp" alt="right-arrow">
@@ -193,7 +193,7 @@
 
             <div class="container mx-auto px-3 relative z-50">
                 <div
-                    class="absolute xl:-left-16 max-xl:-bottom-4 md:left-80 sm:left-56 left-2 xl:top-[54%] max-sm:top-[54%] group ">
+                    class="absolute xl:-left-16 max-xl:-bottom-4 lg:left-[45%] md:left-80 sm:left-64 left-2 xl:top-[54%] max-sm:top-[54%] group ">
                     <button
                         class="prev items-center flex justify-center border border-brown  group-hover:bg-linear-1 duration-300 ease-linear group-hover:border-none size-[38px] max-sm:size-6 rounded-full cursor-pointer"
                         aria-label="Previous Slide"><svg width="12" height="15" viewBox="0 0 12 20" fill="none"
@@ -205,7 +205,7 @@
                     </button>
                 </div>
                 <div
-                    class="absolute xl:-right-16 max-xl:-bottom-4 md:right-80 sm:right-56 right-2 xl:top-[54%] max-sm:top-[54%] group">
+                    class="absolute xl:-right-16 max-xl:-bottom-4 lg:right-[45%] md:right-80 sm:right-64 right-2 xl:top-[54%] max-sm:top-[54%] group">
                     <button
                         class="next items-center flex justify-center border border-brown  group-hover:bg-linear-1 duration-300 ease-linear group-hover:border-none group-hover:bg-blue size-[38px] max-sm:size-6 rounded-full cursor-pointer"
                         aria-label="Next Slide"><svg width="12" height="15" viewBox="0 0 12 20" fill="none"
@@ -222,9 +222,10 @@
                         class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl lg:leading-[140%] text-center xl:mb-[49px] font-medium lg:mb-14 md:mb-11 mb-7">
                         Explore Our Features</h2>
                 </div>
-                <div class="flex flex-col justify-center items-center max-xl:max-w-[800px] max-lg::max-w-[unset] max-xl:ps-52 max-lg:ps-0 max-xl:overflow-hidden mx-auto">
+                <div
+                    class="flex flex-col justify-center items-center max-xl:max-w-[800px] max-lg::max-w-[unset] max-xl:ps-52 max-lg:ps-0 max-xl:overflow-hidden mx-auto">
                     <div
-                        class="features-slider overflow-hidden xl:max-w-[1140px] lg:max-w-[992px] md:max-w-[508px] sm:max-W-[576px] max-w-[270px]  max-lg:w-full">
+                        class="features-slider overflow-hidden xl:max-w-[1180px] lg:max-w-[992px] md:max-w-[508px] sm:max-W-[576px] max-w-[270px]  max-lg:w-full">
                         <div>
                             <div
                                 class="flex justify-center relative z-40 bg-white rounded-[10px] hover:border-none hover:shadow-dark duration-300 ease-linear max-w-[267px] xl:min-w-[267px] min-w-[240px] border border-light-gray-3 w-full lg:min-h-[249px] md:min-h-[200px] min-h-[180px] max-md:max-w-[320px] xl:pt-[47px] lg:pt-9 md:pt-8 pt-6">
@@ -346,24 +347,24 @@
             </div>
         </section>
 
-        <!-- =================================== Our mission section ================================= -->
-        <section class="xl:mb-[89px] lg:mb-16 md:mb-14 mb-12 relative">
+        <!-- =================================== Our mission section ================================== -->
+        <section class="xl:mb-[89px] lg:mb-16 md:mb-14 mb-12 relative" id="chatroom">
             <img class="absolute pointer-events-none xl:max-w-44 lg:max-w-28 max-lg:hidden right-0 -bottom-28"
                 src="./assets/img/svg/right-gradient-line-3.svg" alt="gradient-line-img">
             <img class="absolute pointer-events-none xl:max-w-12 lg:max-w-10 max-w-7 -right-6 -bottom-[150px]"
                 src="./assets/img/webp/dot-img.webp" alt="dot-img">
             <div class="container mx-auto px-3 w-full">
                 <div
-                    class="bg-blue-pink xl:h-[791px] lg:h-[702px] h-full lg:w-[103%] object-cover max-w-[1140px] rounded-xl overflow-hidden relative">
+                    class="bg-blue-pink xl:h-[791px] lg:h-[702px] h-full xl:w-[103%] object-cover max-w-[1140px] rounded-xl overflow-hidden relative">
                     <img class="absolute pointer-events-none max-w-[241px] top-0 xl:left-[421px] lg:left-96 md:left-52 left-10"
                         src="./assets/img/webp/our-misson-section-img.webp" alt="circle-img">
                     <img class="absolute pointer-events-none xl:max-w-[230px] lg:max-w-48 max-w-36 right-0 xl:top-[280px] lg:top-56 bottom-0 w-full"
                         src="./assets/img/webp/our-mission-section-img-2.webp" alt="circle-img-2">
                     <div>
                         <div class="flex flex-wrap w-full justify-center relative z-50">
-                            <div class="lg:w-6/12 lg:pt-10 md:pt-6 pt-3 md:pl-10 px-3">
+                            <div class="lg:w-6/12 lg:pt-12 md:pt-6 pt-3 md:pl-10 px-3">
                                 <h3
-                                    class="lg:mb-6 md:mb-4 mb-2 xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium text-white text-center lg:text-start blue-line after:bg-white after:max-w-[111px] relative translate-x-0">
+                                    class="lg:mb-6 md:mb-4 mb-2 xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl font-medium text-white text-center lg:text-start blue-line after:bg-white after:max-w-[114px] relative translate-x-0">
                                     Our Mission</h3>
                                 <p
                                     class="lg:text-base text-sm lg:max-w-[392px] max-w-[400px] text-light-brown-3 font-inter text-center lg:text-start">
@@ -380,17 +381,17 @@
                                     heights.</p>
                             </div>
                             <div class="lg:w-6/12 flex lg:justify-end justify-center">
-                                <img class="xl:max-w-[573px] lg:max-w-[500px] w-full xl:min-w-[501px] max-w-[300px] lg:pt-0 pt-5 lg:px-0 px-3"
+                                <img class="xl:max-w-[573px] lg:max-w-[500px] w-full xl:min-w-[501px] md:max-w-[430px] max-w-[320px] lg:pt-0 pt-5 lg:px-0 px-3"
                                     src="./assets/img/webp/mobile-laptop-img-2.webp" alt="mobile-and-laptop-img">
                             </div>
                         </div>
                         <div class="flex flex-wrap w-full pt-5 justify-center relative z-50">
                             <div class="lg:w-6/12 w-full flex max-lg:justify-center">
-                                <img class="xl:max-w-[550px] lg:max-w-[500px] max-w-[307px] lg:pt-2 pt-0 lg:px-0 px-3"
+                                <img class="xl:max-w-[550px] lg:max-w-[500px] md:max-w-[430px] max-w-[320px] lg:pt-2 pt-0 lg:px-0 px-3 w-full"
                                     src="./assets/img/webp/mobile-laptop-img-1.webp" alt="mobile-and-laptop-img">
                             </div>
                             <div
-                                class="lg:w-6/12 w-full flex max-lg:justify-center flex-col max-lg:items-center xl:pt-[104px] md:pt-6 pt-3 md:pl-10 px-3">
+                                class="lg:w-6/12 w-full flex max-lg:justify-center flex-col max-lg:items-center xl:pt-[104px] lg:pt-16 md:pt-6 pt-3 md:pl-10 lg:pl-4 xl:pl-10 px-3">
                                 <h3
                                     class="lg:mb-6 md:mb-4 mb-2 xl:text-4xl-2 blue-line relative after:bg-white after:m max-w-[140px] lg:text-4xl md:text-3xl text-2xl font-medium text-white text-center lg:text-start">
                                     Solution</h3>
@@ -410,8 +411,8 @@
             </div>
         </section>
 
-        <!-- =================================== Wait-list section ================================= -->
-        <section class="xl:pb-[153px] lg:pb-24 md:pb-16 sm:pb-14 pb-12">
+        <!-- =================================== Wait-list section ==================================== -->
+        <section class="xl:pb-[153px] lg:pb-24 md:pb-16 sm:pb-14 pb-12" id="cofounder">
             <div class="container mx-auto px-3">
                 <div
                     class="blue-box bg-linear-2 xl:pt-[29px] lg:pt-6 md:pt-5 pt-4 flex flex-col  items-center rounded-2xl max-w-[761px] w-full lg:min-h-[198px] md:min-h-[170px] min-h-[120px] mx-auto">
@@ -421,9 +422,9 @@
                     <div
                         class="relative p-[1px] bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] rounded-full mb-[22px] lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
                         <div
-                            class="relative lg:py-2 py-1 lg:px-2 px-1 hover:shadow-light-9 duration-200 ease-linear bg-white rounded-[35px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
+                            class="relative lg:py-2 py-1 lg:px-2 px-1 shadow-light-9 duration-200 ease-linear bg-white rounded-[35px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
                             <input type="email" required
-                                class="font-normal ps-[14px] outline-none max-w-[350px] w-full placeholder:text-light-brown text-light-brown lg:text-base text-sm leading-max bg-transparent"
+                                class="font-normal ps-[14px] outline-none max-w-[350px] w-full placeholder:font-inter placeholder:text-light-brown text-light-brown lg:text-base text-sm leading-max bg-transparent"
                                 placeholder="Enter your email">
                             <img class="lg:max-w-[69px] hover:scale-[1.04] duration-150 ease-linear rounded-full max-w-[47px] cursor-pointer"
                                 src="./assets/img/webp/email-right-img.webp" alt="right-arrow">
@@ -433,7 +434,7 @@
             </div>
         </section>
 
-        <!-- =================================== Problem section ================================= -->
+        <!-- =================================== Problem section ====================================== -->
         <section class="xl:mb-[96px] lg:mb-16 md:mb-14 sm:mb-11 mb-9">
             <div class="container px-3 lg:max-w-[800px] xl:max-w-[1170px]">
                 <div class="max-w-max mx-auto">
@@ -446,7 +447,7 @@
                 <div class="flex flex-wrap justify-center items-center mx-auto">
                     <div class="xl:w-4/12 lg:w-6/12 py-3 px-3 ">
                         <div
-                            class="lg:px-[29px] px-5 lg:py-[37px] py-7 border rounded-xl border-light-gray max-w-[364px] hover:border-none hover:shadow-light-4 lg:min-w-[364px] lg:min-h-[245px] w-full">
+                            class="lg:px-[29px] px-5 lg:py-[37px] py-7 border rounded-xl border-light-gray max-w-[364px] hover:border-none duration-300 ease-linear hover:shadow-light-4 lg:min-w-[364px] lg:min-h-[245px] w-full">
                             <img class="xl:mb-[26px] lg:mb-5 mb-3" src="./assets/img/svg/spend-control.svg"
                                 alt="hand-img">
                             <h4 class="font-medium lg:text-xl text-lg leading-max lg:mb-[13px] mb-2">Spend Control</h4>
@@ -459,7 +460,7 @@
                     </div>
                     <div class="xl:w-4/12 lg:w-6/12 py-3 px-3">
                         <div
-                            class="lg:px-[29px] px-5 lg:py-[37px] py-7 border rounded-xl border-light-gray max-w-[364px] hover:border-none hover:shadow-light-4 lg:min-w-[364px] lg:min-h-[245px]">
+                            class="lg:px-[29px] px-5 lg:py-[37px] py-7 border rounded-xl border-light-gray max-w-[364px] hover:border-none duration-300 ease-linear hover:shadow-light-4 lg:min-w-[364px] lg:min-h-[245px]">
                             <img class="xl:mb-[26px] lg:mb-5 mb-3" src="./assets/img/svg/setting-img.svg"
                                 alt="setting-img">
                             <h4 class="font-medium lg:text-xl text-lg leading-max lg:mb-[13px] mb-2">Unforgotten Taxes
@@ -471,7 +472,7 @@
                     </div>
                     <div class="xl:w-4/12 lg:w-6/12 py-3 px-3">
                         <div
-                            class="lg:px-[29px] px-5 lg:py-[37px] py-7 border rounded-xl border-light-gray max-w-[364px] hover:border-none hover:shadow-light-4 lg:min-w-[364px] lg:min-h-[245px]">
+                            class="lg:px-[29px] px-5 lg:py-[37px] py-7 border rounded-xl border-light-gray max-w-[364px] hover:border-none duration-300 ease-linear hover:shadow-light-4 lg:min-w-[364px] lg:min-h-[245px]">
                             <img class="xl:mb-[26px] lg:mb-5 mb-3" src="./assets/img/svg/tax-img.svg" alt="tax-img">
                             <h4 class="font-medium lg:text-xl text-lg leading-max lg:mb-[13px] mb-2">Spend Control</h4>
                             <p class="max-w-[288px] lg:text-base text-sm text-light-black font-inter">Over are the days
@@ -483,13 +484,13 @@
             </div>
         </section>
 
-        <!-- =================================== Experience section ================================= -->
+        <!-- =================================== Experience section =================================== -->
         <section class="xl:pb-[128px] lg:pb-[99px] md:pb-16 sm:pb-14 pb-12 relative">
             <img class="absolute pointer-events-none xl:max-w-[108px] lg:max-w-14 md:max-w-12 max-w-7  xl:-top-[31%]  lg:-top-[34%]  md:-top-[33%] -top-[16%]"
                 src="./assets/img/webp/left-gradient-line-img.webp" alt="gradient-line-img">
             <img class="absolute pointer-events-none xl:max-w-12 lg:max-w-10 md:max-w-8 max-w-7 xl:-left-5 -left-4 xl:top-20 top-0"
                 src="./assets/img/webp/dot-img.webp" alt="dot-img">
-            <div class="container mx-auto px-3">
+            <div class="container mx-auto px-3 relative z-40">
                 <div
                     class="flex justify-center flex-col shadow-light-5 rounded-xl bg-blue-pink w-full lg:min-h-[233px] xl:max-h-[233px] xl:px-[119px] lg:px-20 md:px-16 sm:px-12 px-7 xl:py-[52px] lg:py-10 md:py-7 py-5">
                     <div class="flex flex-wrap justify-center items-center">
@@ -548,8 +549,8 @@
             </div>
         </section>
 
-        <!-- =================================== Dashboard section ================================= -->
-        <section class="xl:pb-[97px] lg:pb-20 md:pb-16 sm:pb-14 pb-12 relative">
+        <!-- =================================== Dashboard section ==================================== -->
+        <section class="xl:pb-[97px] lg:pb-20 md:pb-16 sm:pb-14 pb-12 relative">    
             <img class="absolute pointer-events-none xl:max-w-44 lg:max-w-20  max-lg:hidden right-0 top-[45.5%]"
                 src="./assets/img/svg/right-gradient-line-3.svg" alt="">
             <div class="container px-3">
@@ -570,7 +571,7 @@
                                     ornare. Erat at sed aenean vestibulum pellentesque vulputate. </p>
                             </div>
                             <div class="lg:w-6/12 w-full flex lg:justify-end justify-center">
-                                <img class="xl:max-w-[384px] w-full xl:-mt-3 lg:max-w-[327px] max-w-[280px] max-h-[320px] lg:pr-[34px]"
+                                <img class="xl:max-w-[384px] w-full xl:-mt-3 lg:max-w-[327px] max-w-[240px] max-h-[320px] lg:pr-[34px]"
                                     src="./assets/img/webp/graph-img.webp" alt="graph-img">
                             </div>
                         </div>
@@ -581,7 +582,7 @@
                     <div class=" border-r-[12px] rounded-xl border-pink xl:min-h-[294px] xl:max-h-[294px] ">
                         <div class="flex flex-wrap">
                             <div class="lg:w-6/12 w-full flex max-lg:justify-center">
-                                <img class="lg:max-w-[378px] md:max-w-[340px] sm:max-w-[290px] max-w-[250px] w-full lg:ml-[46px]  mt-[24px] mb-[14px] shadow-light-6 rounded-2xl"
+                                <img class="lg:max-w-[378px] md:max-w-[290px] sm:max-w-[250px] max-w-[230px] w-full lg:ml-[46px]  mt-[24px] mb-[14px] shadow-light-6 rounded-2xl"
                                     src="./assets/img/webp/accounts-card-img.webp" alt="accounts-card-img">
                             </div>
                             <div class="lg:w-6/12 w-full flex flex-col justify-center items-center">
@@ -603,7 +604,7 @@
                 <div
                     class="box max-w-[1060px] hover:shadow-blue border-light-gray border-[1px] hover:border-none duration-300 ease-linear pe-7 rounded-xl relative">
                     <div
-                        class=" border-l-[17px] rounded-xl ps-7  border-periwinkle-blue  xl:min-h-[292px] xl:max-h-[292px]  ">
+                        class=" border-l-[19px] rounded-xl ps-7 flex flex-col justify-center border-periwinkle-blue  xl:min-h-[292px] xl:max-h-[292px]  ">
                         <img class="absolute -right-1 xl:-bottom-[57.5px] lg:-bottom-12 md:-bottom-6 -bottom-5 xl:max-w-12 lg:max-w-10 max-w-7 w-full"
                             src="./assets/img/webp/dot-img.webp" alt="dot-img">
                         <div class="flex flex-wrap justify-center items-center">
@@ -617,7 +618,7 @@
                                     ornare. Erat at sed aenean vestibulum pellentesque vulputate. </p>
                             </div>
                             <div class="lg:w-6/12 w-full flex lg:justify-end justify-center">
-                                <img class="lg:max-w-[380px] lg:pt-[18px] md:max-w-[300px] max-sm:max-w-[240px] max-w-[270px] max-lg:pb-5 max-lg:pt-5 w-full"
+                                <img class="lg:max-w-[380px] max-xl:pt-5 max-xl:pb-5 md:max-w-[300px] max-sm:max-w-[240px] max-w-[270px] w-full"
                                     src="./assets/img/webp/dashboard-sec-card-img.webp" alt="card-img">
                             </div>
                         </div>
@@ -627,8 +628,8 @@
             </div>
         </section>
 
-        <!-- =================================== Wait-list section 2 ================================= -->
-        <section class="xl:pb-[121px] lg:pb-24 md:pb-16 sm:pb-14 pb-12">
+        <!-- =================================== Wait-list section 2 ================================== -->
+        <section class="xl:pb-[121px] lg:pb-24 md:pb-12 sm:pb-14 pb-7">
             <div class="container mx-auto px-3">
                 <div
                     class="blue-box bg-linear-2 xl:pt-[29px] lg:pt-6 md:pt-5 pt-4 flex flex-col justify-center items-center rounded-2xl max-w-[761px] lg:min-h-[198px] md:min-h-[170px] min-h-[150px] mx-auto">
@@ -638,9 +639,9 @@
                     <div
                         class="relative p-[1px] bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] rounded-full mb-[22px] lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
                         <div
-                            class="relative lg:py-2 py-1 lg:px-2 px-1 hover:shadow-light-9 duration-200 ease-linear bg-white rounded-[35px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
+                            class="relative lg:py-2 py-1 lg:px-2 px-1 shadow-light-9 duration-200 ease-linear bg-white rounded-[35px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
                             <input type="email" required
-                                class="font-normal ps-[14px] outline-none max-w-[350px] w-full placeholder:text-light-brown text-light-brown lg:text-base text-sm leading-max bg-transparent"
+                                class="font-normal ps-[14px] outline-none max-w-[350px] w-full placeholder:font-inter placeholder:text-light-brown text-light-brown lg:text-base text-sm leading-max bg-transparent"
                                 placeholder="Enter your email">
                             <img class="lg:max-w-[69px] hover:scale-[1.04] duration-150 ease-linear rounded-full max-w-[47px] cursor-pointer"
                                 src="./assets/img/webp/email-right-img.webp" alt="right-arrow">
@@ -650,7 +651,7 @@
             </div>
         </section>
 
-        <!-- =================================== How it's working section ================================= -->
+        <!-- =================================== How it's working section ============================= -->
         <section
             class="bg-light-blue xl:pt-[68px] lg:pt-12 md:pt-10 pt-7 xl:pb-[78px] md:pb-10 sm:pb-7 pb-6 xl:mb-[131px] lg:mb-20 md:mb-16 sm:mb-14 mb-12 relative overflow-y-hidden">
             <img class="absolute pointer-events-none left-0 top-3 xl:max-w-16 lg:max-w-10 max-w-7 w-full"
@@ -728,8 +729,8 @@
             </div>
         </section>
 
-        <!-- =================================== Potential plans section ================================= -->
-        <section class="xl:pb-24 lg:pb-20 md:pb-16 sm:pb-14 pb-10 relative">
+        <!-- =================================== Potential plans section ============================= -->
+        <section class="xl:pb-24 lg:pb-20 md:pb-7 sm:pb-6 pb-4 relative" id="invest">
             <img class="absolute pointer-events-none xl:max-w-16 lg:max-w-12 max-w-7 right-0 xl:-top-9"
                 src="./assets/img/webp/right-gradient-line-2.webp" alt="gradient-line-img">
             <img class="absolute pointer-events-none xl:max-w-12 lg:max-w-10 sm:max-w-8 max-w-6 w-full xl:right-9 lg:right-5 right-3"
@@ -753,7 +754,7 @@
                                     Best
                                     for sole traders</p>
                                 <p
-                                    class="text-5xl font-semibold font-open pb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent">
+                                    class="xl:text-5xl lg:text-4xl text-3xl font-semibold font-open pb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent">
                                     Free
                                 </p>
                                 <p
@@ -836,7 +837,7 @@
                                     class="text-brown lg:text-base text-sm font-inter group-hover:text-white text-center xl:mb-[27px] lg:mb-6 mb-5">
                                     Best for small business</p>
                                 <p
-                                    class="text-5xl font-semibold font-open lg:mb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent relative">
+                                    class="xl:text-5xl lg:text-4xl text-3xl font-semibold font-open lg:mb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent relative">
                                     <sup
                                         class="font-poppins font-semibold text-xl group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent absolute translate-y-3 -translate-x-3">$</sup>25
                                 </p>
@@ -938,9 +939,9 @@
                                     class="text-brown lg:text-base text-sm font-inter group-hover:text-white text-center xl:mb-[27px] lg:mb-6 mb-5">
                                     Best for growth businesses</p>
                                 <p
-                                    class="text-5xl font-semibold font-open  lg:mb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent relative">
+                                    class="xl:text-5xl lg:text-4xl text-3xl font-semibold font-open lg:mb-3 mb-2 group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent relative">
                                     <sup
-                                        class="font-poppins font-semibold text-xl group-hover:text-white    bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent absolute translate-y-3 -translate-x-3">$</sup>35
+                                        class="font-poppins font-semibold text-xl group-hover:text-white bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] bg-clip-text text-transparent absolute translate-y-3 -translate-x-3">$</sup>35
                                 </p>
                                 <p
                                     class="text-Gray lg:text-base text-sm font-inter lg:mb-[17px] group-hover:text-white md:mb-4 mb-3">
@@ -1087,14 +1088,14 @@
             </div>
         </section>
 
-        <!-- =================================== Faq accordion section ================================= -->
+        <!-- =================================== Faq accordion section =============================== -->
         <section class="xl:pb-[90px] xl:pt-[87px] sm:pt-10 pt-7 lg:pb-16 md:pb-14 pb-12 relative">
             <img class="absolute pointer-events-none xl:max-w-16 lg:max-w-12 max-w-7 right-0 xl:top-7 max-xl:top-10"
                 src="./assets/img/webp/right-gradient-line-2.webp" alt="gradient-line-img">
             <div class="container mx-auto px-3">
                 <div class="max-w-max mx-auto">
                     <h2
-                        class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl lg:leading-[125%] font-medium text-center xl:mb-[50px] lg:mb-9 md:mb-4 mb-0 blue-line relative after:bg-blue after:max-w-[174px] after:translate-x-48">
+                        class="xl:text-4xl-2 lg:text-4xl md:text-3xl text-2xl lg:leading-[125%] font-medium text-center xl:mb-[50px] lg:mb-9 md:mb-4 mb-3 blue-line relative after:bg-blue after:max-w-[174px] after:translate-x-48">
                         Frequently Awesome Questions</h2>
                 </div>
                 <div class="flex flex-wrap">
@@ -1128,7 +1129,7 @@
                                     </div>
                                     <div id="content-1" class="pb-[18px]">
                                         <p
-                                            class="lg:text-base text-sm font-inter text-brown max-w-[610px] lg:leading-[168%]">
+                                            class="lg:text-base text-sm font-inter text-brown max-w-[620px] lg:leading-[168%]">
                                             WorkUp envisions becoming
                                             the
                                             ultimate
@@ -1161,7 +1162,7 @@
                                     </div>
                                     <div id="content-2" class="hidden pb-[18px]">
                                         <p
-                                            class="lg:text-base text-sm font-inter text-brown max-w-[610px] lg:leading-[168%]">
+                                            class="lg:text-base text-sm font-inter text-brown max-w-[620px] lg:leading-[168%]">
                                             WorkUp envisions becoming
                                             the
                                             ultimate
@@ -1194,7 +1195,7 @@
                                     </div>
                                     <div id="content-3" class="hidden pb-[18px]">
                                         <p
-                                            class="lg:text-base text-sm font-inter text-brown max-w-[610px] lg:leading-[168%]">
+                                            class="lg:text-base text-sm font-inter text-brown max-w-[620px] lg:leading-[168%]">
                                             WorkUp envisions becoming
                                             the
                                             ultimate
@@ -1227,7 +1228,7 @@
                                     </div>
                                     <div id="content-4" class="hidden pb-[18px]">
                                         <p
-                                            class="lg:text-base text-sm font-inter text-brown max-w-[610px] lg:leading-[168%]">
+                                            class="lg:text-base text-sm font-inter text-brown max-w-[620px] lg:leading-[168%]">
                                             WorkUp envisions becoming
                                             the
                                             ultimate
@@ -1259,7 +1260,7 @@
                                     </div>
                                     <div id="content-5" class="hidden pb-[18px]">
                                         <p
-                                            class="lg:text-base text-sm font-inter text-brown max-w-[610px] lg:leading-[168%]">
+                                            class="lg:text-base text-sm font-inter text-brown max-w-[620px] lg:leading-[168%]">
                                             WorkUp envisions becoming
                                             the
                                             ultimate
@@ -1291,7 +1292,7 @@
                                     </div>
                                     <div id="content-6" class="hidden pb-[18px]">
                                         <p
-                                            class="lg:text-base text-sm font-inter text-brown max-w-[610px] lg:leading-[168%]">
+                                            class="lg:text-base text-sm font-inter text-brown max-w-[620px] lg:leading-[168%]">
                                             WorkUp envisions becoming
                                             the
                                             ultimate
@@ -1309,7 +1310,7 @@
             </div>
         </section>
 
-        <!-- =================================== Free demo section  ================================= -->
+        <!-- =================================== Free demo section  ================================== -->
         <section class="-mb-[56px] relative z-50">
             <div class="container mx-auto px-3">
                 <div
@@ -1324,9 +1325,9 @@
                     <div
                         class="relative p-[1px] bg-gradient-to-r from-[#994FFF] to-[#4AB6FE] rounded-full mb-[22px] lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
                         <div
-                            class="relative lg:py-2 py-1 lg:px-2 px-1 hover:shadow-light-9 duration-200 ease-linear bg-white rounded-[35px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
+                            class="relative lg:py-2 py-1 lg:px-2 px-1 shadow-light-9 duration-200 ease-linear bg-white rounded-[35px] flex lg:max-w-[464px] md:max-w-96 sm:max-w-72 max-w-64 justify-between w-full">
                             <input type="email" required
-                                class="font-normal ps-[14px] outline-none max-w-[350px] w-full placeholder:text-light-brown text-light-brown lg:text-base text-sm leading-max bg-transparent"
+                                class="font-normal ps-[14px] outline-none max-w-[350px] w-full placeholder:font-inter placeholder:text-light-brown text-light-brown lg:text-base text-sm leading-max bg-transparent"
                                 placeholder="Enter your email">
                             <img class="lg:max-w-[69px] hover:scale-[1.04] duration-150 ease-linear rounded-full max-w-[47px] cursor-pointer"
                                 src="./assets/img/webp/email-right-img.webp" alt="right-arrow">
@@ -1336,12 +1337,12 @@
             </div>
         </section>
 
-        <!-- =================================== Footer section  ================================= -->
+        <!-- =================================== Footer section  ===================================== -->
         <section class="bg-linear-6 lg:pt-[118px] pt-24 relative">
             <div class="container mx-auto px-3">
                 <div class="flex flex-wrap ">
-                    <div class="lg:w-6/12 w-full px-3 pb-2">
-                        <a href="/"><img class="max-w-[160px] lg:mb-[22px] md:mb-4 mb-3"
+                    <div class="lg:w-5/12 w-full px-3 pb-2">
+                        <a href="/"><img class="lg:max-w-[160px] md:max-w-32 max-w-28 w-full lg:mb-[22px] md:mb-4 mb-3"
                                 src="./assets/img/webp/footer-logo-img.webp" alt="page-logo"></a>
                         <p class="max-w-[435px] font-inter font-medium lg:text-sm text-xs mb-3 text-[#FFFFFFB2]">The is
                             a
@@ -1351,27 +1352,27 @@
                             layout.
                         </p>
                         <div class="flex gap-4">
-                            <a class="size-[34px] flex justify-center items-center bg-white rounded-full hover:shadow-light-8 hover:scale-[1.07] duration-300 ease-linear"
+                            <a class="lg:size-[34px] md:size-[30px] size-[24px] flex justify-center items-center bg-white rounded-full hover:shadow-light-8 hover:scale-[1.07] duration-300 ease-linear"
                                 href="https://www.facebook.com/" target="_blank">
                                 <img src="./assets/img/svg/facebook-logo.svg " alt="facebook-logo">
                             </a> <a
-                                class="size-[34px] flex justify-center items-center bg-white rounded-full hover:shadow-light-8 hover:scale-[1.07] duration-300 ease-linear"
+                                class="lg:size-[34px] md:size-[30px] size-[24px] flex justify-center items-center bg-white rounded-full hover:shadow-light-8 hover:scale-[1.07] duration-300 ease-linear"
                                 href="https://www.instagram.com/" target="_blank">
                                 <img src="./assets/img/svg/instagram-img.svg " alt="instagram-logo">
                             </a> <a
-                                class="size-[34px] flex justify-center items-center bg-white rounded-full hover:shadow-light-8 hover:scale-[1.07] duration-300 ease-linear"
+                                class="lg:size-[34px] md:size-[30px] size-[24px] flex justify-center items-center bg-white rounded-full hover:shadow-light-8 hover:scale-[1.07] duration-300 ease-linear"
                                 href="https://x.com/?lang=en-id" target="_blank">
                                 <img src="./assets/img/svg/twitter-img.svg " alt="twitter-logo">
                             </a> <a
-                                class="size-[34px] flex justify-center items-center bg-white rounded-full hover:shadow-light-8 hover:scale-[1.07] duration-300 ease-linear"
+                                class="lg:size-[34px] md:size-[30px] size-[24px] flex justify-center items-center bg-white rounded-full hover:shadow-light-8 hover:scale-[1.07] duration-300 ease-linear"
                                 href="https://www.linkedin.com/" target="_blank">
                                 <img src="./assets/img/svg/linkedin-img.svg " alt="linkedin-logo">
                             </a>
                         </div>
                     </div>
-                    <div class="lg:w-6/12 w-full px-3 max-lg:mt-10">
+                    <div class="lg:w-7/12 w-full px-3 max-lg:mt-7 max-md:mt-5 max-sm:mt-4">
                         <div class="flex flex-wrap lg:justify-end">
-                            <div class="lg:w-6/12 w-6/12 flex lg:justify-end justify-center">
+                            <div class="lg:w-6/12 w-6/12 flex lg:justify-end ">
                                 <div class="text-white ">
                                     <h4 class="mb-[10px] font-open font-semibold xl:text-xl lg:text-lg text-base">
                                         Home
@@ -1381,26 +1382,26 @@
                                             href="#thoughts">What
                                             are Your Thoughts?</a>
                                         <a class="font-inter hover:text-blue duration-300 ease-linear"
-                                            href="#invest">Invest</a>
+                                            href="#invest.">Invest</a>
                                         <a class="font-inter hover:text-blue duration-300 ease-linear"
-                                            href="#cofounder">Become A Cofounder</a>
+                                            href="#cofounder.">Become A Cofounder</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="lg:w-4/12 w-6/12 flex lg:justify-end justify-center max-sm:justify-end">
+                            <div class="lg:w-4/12 w-6/12 flex lg:justify-end  max-sm:justify-center">
                                 <div class="text-white ">
                                     <h4 class="mb-[10px] font-open font-semibold xl:text-xl lg:text-lg text-base">
                                         Links
                                     </h4>
                                     <div class="font-inter font-medium lg:text-sm text-xs flex flex-col gap-[13px]">
                                         <a class="font-inter hover:text-blue duration-300 ease-linear"
-                                            href="#thoughts">Contact us</a>
+                                            href="#contact">Contact us</a>
                                         <a class="font-inter hover:text-blue duration-300 ease-linear"
-                                            href="#invest">FAQ</a>
+                                            href="#faq">FAQ</a>
                                         <a class="font-inter hover:text-blue duration-300 ease-linear"
-                                            href="#cofounder">Privacy</a>
+                                            href="#privacy">Privacy</a>
                                         <a class="font-inter hover:text-blue duration-300 ease-linear"
-                                            href="#cofounder">Terms & conditions</a>
+                                            href="#terms&condition">Terms & conditions</a>
                                     </div>
                                 </div>
                             </div>

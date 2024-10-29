@@ -48,7 +48,7 @@
     border-image-slice: 1;
     border-radius: 9999px;
 }
-
+ 
 .leading-max {
     line-height: 118% !important;
 }
@@ -72,8 +72,23 @@
     padding-bottom: 15px;
 }
 
+.slick-list {
+    padding-left: 20px !important;
+}
+
 @media (max-width:1024.99px) {
     .blue-line::after {
         position: relative;
+    }
+
+    .slick-list {
+        padding-left: 0px !important;
+    }
+}
+
+@media (max-width:768.99px) {
+
+    .slick-list {
+        padding-left: 40px !important;
     }
 }
